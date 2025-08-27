@@ -164,7 +164,7 @@ function Roadmap({
 }) {
     // layout params
     const h = 180;
-    const padX = 32;
+    const padX = 75;
     const step = 1 / (STAGES.length - 1); // normalized spacing along 0..1
     const points = STAGES.map((_, i) => i * step);
 
