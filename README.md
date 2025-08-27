@@ -15,48 +15,6 @@ This site is a narrative-forward portfolio for college applications. It prioriti
 
 ---
 
-## Structure
-
-portfolio-site/
-├─ public/
-│  ├─ resume.pdf # placeholder ok
-│  └─ media/ # screenshots (placeholders ok)
-│     ├─ learnloom.png
-│     ├─ transcriptome.png
-│     ├─ research-portfolio.png
-│     ├─ miranda.png
-│     └─ ourchoice.png
-├─ src/
-│  ├─ app/
-│  │  ├─ App.tsx
-│  │  └─ routes.tsx
-│  ├─ components/
-│  │  ├─ Navbar.tsx
-│  │  ├─ Footer.tsx
-│  │  └─ PoemModal.tsx
-│  ├─ content/
-│  │  └─ poems.js # your poems source (JS export)
-│  ├─ data/
-│  │  ├─ poems.ts # TS adapter (slugify, tags list)
-│  │  └─ projects.ts # project metadata
-│  ├─ pages/
-│  │  ├─ Home/Home.tsx
-│  │  ├─ About/About.tsx
-│  │  ├─ Projects/Projects.tsx
-│  │  ├─ Projects/ProjectDetail.tsx
-│  │  ├─ Poetry/Poetry.tsx
-│  │  ├─ Resume/Resume.tsx
-│  │  └─ Contact/Contact.tsx
-│  ├─ styles/tailwind.css
-│  └─ main.tsx
-├─ tailwind.config.js
-├─ postcss.config.js
-├─ tsconfig.json
-├─ vite.config.ts
-└─ package.json
-
----
-
 ## Quickstart
 
 **Prereqs:** Node 18+
