@@ -58,3 +58,23 @@
     animation: ringPulse 1.8s ease-out infinite;
     transform-origin: center;
 }
+
+
+/* Roadmap container glow */
+.roadmap-wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.roadmap-wrap::before {
+    content: "";
+    position: absolute;
+    inset: -12%;
+    pointer-events: none;
+    background:
+        radial-gradient(ellipse at 70% 35%, var(--glow, transparent) 0%, transparent 55%),
+        radial-gradient(ellipse at 30% 70%, color-mix(in oklab, var(--glow, transparent) 30%, transparent) 0%, transparent 60%);
+    filter: blur(18px);
+    transition: background 240ms ease, opacity 240ms ease;
+    opacity: .9;
+}

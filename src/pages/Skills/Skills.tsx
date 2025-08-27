@@ -297,10 +297,10 @@ function Roadmap({
                             {/* subtle halo pulse when active */}
                             {isActive && (
                                 <motion.circle
-                                    r={18}
+                                    r={22}
                                     fill="none"
                                     stroke={color.stroke}
-                                    strokeWidth={4}
+                                    strokeWidth={5}
                                     className="ring-pulse"
                                     initial={{ opacity: 0, scale: 1 }}
                                     animate={{ opacity: 0.35, scale: 1.25 }}
@@ -308,9 +308,9 @@ function Roadmap({
                                 />
                             )}
 
-                            {/* base node */}
+                            {/* base node (bigger) */}
                             <motion.circle
-                                r={isActive ? 14 : 10}
+                                r={isActive ? 18 : 13}
                                 fill="white"
                                 className="dark:fill-neutral-950"
                                 stroke={color.stroke}
@@ -328,7 +328,7 @@ function Roadmap({
 
                             {/* clickable ring */}
                             <motion.circle
-                                r={28}
+                                r={34}
                                 fill="transparent"
                                 className="cursor-pointer"
                                 onClick={() => onSelect(stage.id)}
@@ -336,10 +336,10 @@ function Roadmap({
                                 aria-label={`Select ${stage.title}`}
                             />
 
-                            {/* label with glow for active; smart anchoring at edges */}
+                            {/* label with glow; smart anchoring at edges */}
                             <motion.text
                                 x={0}
-                                y={isActive ? -32 : -28}
+                                y={isActive ? -36 : -32}
                                 textAnchor={i === 0 ? "start" : i === STAGES.length - 1 ? "end" : "middle"}
                                 className={`text-base font-semibold fill-white ${isActive ? "glow-label" : ""}`}
                             >
@@ -400,21 +400,23 @@ function StagePanel({ stage }: { stage: Stage }) {
  * ────────────────────────────────────────────────────────────────────────── */
 export default function Skills() {
     const [active, setActive] = useState<StageId>("foundations");
-    const [playing, setPlaying] = useState(false);
+    // bool state controlling autoplay
+    const [playing, setPlaying] = useState<boolean>(false);
+    const wrapRef = useRef<HTMLDivElement | null>(null);
     const idx = useMemo(() => STAGES.findIndex((s) => s.id === active), [active]);
     const nextId = STAGES[(idx + 1) % STAGES.length].id;
     const prevId = STAGES[(idx - 1 + STAGES.length) % STAGES.length].id;
 
-    // story auto-advance: advance once per 2.2s; stop at last node
+    // story auto-advance: advance once per 2.2s; on last → jump to first and stop
     useEffect(() => {
         if (!playing) return;
         const id = window.setInterval(() => {
             setActive((prev) => {
                 const i = STAGES.findIndex((s) => s.id === prev);
                 if (i >= STAGES.length - 1) {
-                    // reached the end — stop playing
+                    // reached the end — jump to first and stop
                     setPlaying(false);
-                    return prev;
+                    return STAGES[0].id;
                 }
                 return STAGES[i + 1].id;
             });
@@ -429,6 +431,17 @@ export default function Skills() {
     }, [idx]);
 
 
+    // Background glow tint (CSS var) on the roadmap wrapper
+    useEffect(() => {
+        const el = wrapRef.current;
+        if (!el) return;
+        const stage = STAGES[idx];
+        // pick an HSL hue similar to the stroke (quick map)
+        const hueMap: Record<string, number> = { sky: 195, fuchsia: 300, emerald: 150, amber: 45, violet: 265, rose: 345 };
+        const hue = hueMap[stage.color] ?? 0;
+        el.style.setProperty("--glow", `hsla(${hue}, 95%, 60%, 0.16)`);
+    }, [idx]);
+
     // Keyboard navigation: ← / → change stage, Space toggles Play
     useEffect(() => {
         const onKey = (e: KeyboardEvent) => {
@@ -442,7 +455,7 @@ export default function Skills() {
                 if (idx > 0) setActive(prevId);
             } else if (e.key === " ") {
                 e.preventDefault();
-                setPlaying((v) => !v);
+                setPlaying((prev: boolean) => !prev);
             }
         };
         window.addEventListener("keydown", onKey);
@@ -459,7 +472,7 @@ export default function Skills() {
             </header>
 
             {/* Roadmap */}
-            <div className="rounded-2xl border border-neutral-200 dark:border-neutral-800 p-4">
+            <div ref={wrapRef} className="roadmap-wrap rounded-2xl border border-neutral-200 dark:border-neutral-800 p-4">
                 <Roadmap active={active} onSelect={(id) => setActive(id)} />
                 <p className="mt-2 text-sm opacity-75">
                     Use <strong>Play</strong> for a quick tour; click any milestone for details and examples.
@@ -472,7 +485,7 @@ export default function Skills() {
                         ← Prev
                     </button>
                     <button
-                        onClick={() => setPlaying((v) => !v)}
+                        onClick={() => setPlaying((prev: boolean) => !prev)}
                         className="rounded-lg border border-neutral-300 dark:border-neutral-700 px-3 py-1.5 text-sm hover:bg-neutral-100 dark:hover:bg-neutral-900"
                         aria-pressed={playing}
                     >
