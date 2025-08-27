@@ -7,6 +7,7 @@ import ProjectDetail from '../pages/Projects/ProjectDetail';
 import Poetry from '../pages/Poetry/Poetry';
 import Resume from '../pages/Resume/Resume';
 import Contact from '../pages/Contact/Contact';
+import Skills from '../pages/Skills/Skills';
 
 export const router = createBrowserRouter([
     {
@@ -18,6 +19,7 @@ export const router = createBrowserRouter([
             { path: 'projects', element: <Projects /> },
             { path: 'projects/:slug', element: <ProjectDetail /> },
             { path: 'poetry', element: <Poetry /> },
+            { path: 'skills', element: <Skills /> },
             { path: 'resume', element: <Resume /> },
             { path: 'contact', element: <Contact /> },
         ],

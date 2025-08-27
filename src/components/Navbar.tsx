@@ -13,6 +13,7 @@ export default function Navbar() {
                     <NavLink to="/about" className={linkCls}>About</NavLink>
                     <NavLink to="/projects" className={linkCls}>Projects</NavLink>
                     <NavLink to="/poetry" className={linkCls}>Poetry</NavLink>
+                    <NavLink to="/skills" className={linkCls}>Skills</NavLink>
                     <NavLink to="/resume" className={linkCls}>Resume</NavLink>
                     <NavLink to="/contact" className={linkCls}>Contact</NavLink>
                     <ThemeToggle />
