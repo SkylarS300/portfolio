@@ -384,6 +384,7 @@ export default function Skills() {
     const [playing, setPlaying] = useState(false);
     const idx = useMemo(() => STAGES.findIndex((s) => s.id === active), [active]);
     const nextId = STAGES[(idx + 1) % STAGES.length].id;
+    const prevId = STAGES[(idx - 1 + STAGES.length) % STAGES.length].id;
 
     // tiny story auto-advance
     const timerRef = useRef<number | null>(null);
