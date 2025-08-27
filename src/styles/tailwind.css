@@ -16,3 +16,42 @@
         filter: brightness(1.3);
     }
 }
+
+
+/* ===== Skills Roadmap effects ===== */
+@keyframes labelPulse {
+    0% {
+        filter: drop-shadow(0 0 2px rgba(255, 255, 255, .4));
+    }
+
+    50% {
+        filter: drop-shadow(0 0 7px rgba(255, 255, 255, .9));
+    }
+
+    100% {
+        filter: drop-shadow(0 0 2px rgba(255, 255, 255, .4));
+    }
+}
+
+.glow-label {
+    animation: labelPulse 1.8s ease-in-out infinite;
+}
+
+@keyframes iconBob {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-1.5px) rotate(0.6deg);
+    }
+
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+}
+
+.icon-bob {
+    animation: iconBob 2.4s ease-in-out infinite;
+    transform-origin: center;
+}

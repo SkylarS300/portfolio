@@ -180,6 +180,72 @@ function Roadmap({
     const width = 1232; // 1200 + pad left/right
     const xAt = (t: number) => Math.round(padX + t * (width - padX * 2));
 
+    // simple inline icons per stage (stroke-only for clarity)
+    function Icon({ id, stroke }: { id: StageId; stroke: string }) {
+        const common = { stroke, strokeWidth: 2, fill: "none", strokeLinecap: "round", strokeLinejoin: "round" } as any;
+        switch (id) {
+            case "foundations":
+                // terminal window
+                return (
+                    <g {...common}>
+                        <rect x={-9} y={-7} width={18} height={14} rx={2} />
+                        <path d="M -6 -3 L -2 0 L -6 3" />
+                        <path d="M -1 3 H 5" />
+                    </g>
+                );
+            case "frontend":
+                // cursor/selection
+                return (
+                    <g {...common}>
+                        <path d="M -6 -8 L 6 4 L 1 5 L 0 10 Z" />
+                        <path d="M 4 -6 L 8 -10" />
+                    </g>
+                );
+            case "datasci":
+                // line chart
+                return (
+                    <g {...common}>
+                        <path d="M -8 6 H 8" />
+                        <path d="M -8 6 V -6" />
+                        <path d="M -6 3 L -2 -1 L 2 0 L 6 -4" />
+                        <circle cx={-6} cy={3} r={1.2} fill={stroke} />
+                        <circle cx={-2} cy={-1} r={1.2} fill={stroke} />
+                        <circle cx={2} cy={0} r={1.2} fill={stroke} />
+                        <circle cx={6} cy={-4} r={1.2} fill={stroke} />
+                    </g>
+                );
+            case "bioinfo":
+                // tiny DNA-ish helix
+                return (
+                    <g {...common}>
+                        <path d="M -6 -6 C -2 -2, -2 2, -6 6" />
+                        <path d="M 6 -6 C 2 -2, 2 2, 6 6" />
+                        <path d="M -4 -4 H 4" />
+                        <path d="M -4 0 H 4" />
+                        <path d="M -4 4 H 4" />
+                    </g>
+                );
+            case "commlead":
+                // megaphone
+                return (
+                    <g {...common}>
+                        <path d="M -8 -2 L -2 -4 L -2 4 L -8 2 Z" />
+                        <path d="M -2 -4 L 2 -5 L 2 5 L -2 4 Z" />
+                        <path d="M -7 1 L -5 6" />
+                    </g>
+                );
+            case "advocacy":
+                // heart
+                return (
+                    <g {...common}>
+                        <path d="M 0 6 C -4 2, -6 0, -6 -2 C -6 -4, -4 -6, -2 -6 C -1 -6, 0 -5, 0 -4" />
+                        <path d="M 0 6 C 4 2, 6 0, 6 -2 C 6 -4, 4 -6, 2 -6 C 1 -6, 0 -5, 0 -4" />
+                    </g>
+                );
+        }
+    }
+
+
     return (
         <div className="w-full overflow-hidden">
             <svg
@@ -217,18 +283,31 @@ function Roadmap({
                     const cx = xAt(points[i]);
                     const cy = i % 2 === 0 ? h * 0.35 : h * 0.75;
                     const isActive = active === stage.id;
+                    const color = colorClasses(stage.color);
+                    const closing: Record<StageId, string> = {
+                        foundations: "These tools let me prototype quickly and ship reliable features.",
+                        frontend: "I focus on accessible, responsive UI with clear hierarchy and motion.",
+                        datasci: "My analyses emphasize interpretability and reproducible notebooks.",
+                        bioinfo: "I’ve run RNA-seq pipelines and communicated findings to non-technical audiences.",
+                        commlead: "I mentor peers and maintain clear docs to keep teams moving.",
+                        advocacy: "I build for classrooms and civic projects because technology should serve people.",
+                    };
                     return (
                         <g key={stage.id} transform={`translate(${cx}, ${cy})`}>
                             <motion.circle
                                 r={isActive ? 14 : 10}
                                 fill="white"
                                 className="dark:fill-neutral-950"
-                                stroke={colorClasses(stage.color).stroke}
+                                stroke={color.stroke}
                                 strokeWidth={isActive ? 6 : 4}
                                 initial={{ scale: 0.8, opacity: 0 }}
                                 animate={{ scale: 1, opacity: 1 }}
                                 transition={{ duration: 0.3 }}
                             />
+                            {/* inline icon */}
+                            <g className={isActive ? "icon-bob" : ""} aria-hidden="true">
+                                <Icon id={stage.id} stroke={color.stroke} />
+                            </g>
                             {/* clickable ring */}
                             <motion.circle
                                 r={28}
@@ -239,15 +318,14 @@ function Roadmap({
                                 aria-label={`Select ${stage.title}`}
                             />
                             {/* label */}
-                            <text
+                            <motion.text
                                 x={0}
-                                y={isActive ? -28 : -24}
-                                textAnchor="middle"
-                                className="text-[16px] font-semibold"
-                                fill={colorClasses(stage.color).stroke}
+                                y={isActive ? -32 : -28}
+                                textAnchor={i === 0 ? "start" : i === STAGES.length - 1 ? "end" : "middle"}
+                                className={`text-base font-semibold fill-white ${isActive ? "glow-label" : ""}`}
                             >
                                 {stage.title}
-                            </text>
+                            </motion.text>
 
                         </g>
                     );
@@ -268,6 +346,7 @@ function StagePanel({ stage }: { stage: Stage }) {
                 <div>
                     <h3 className={`text-xl font-semibold ${color.strong}`}>{stage.title}</h3>
                     <p className="opacity-80">{stage.blurb}</p>
+                    <p className="opacity-80 mt-2">{closing[stage.id]}</p>
                 </div>
             </div>
 
@@ -331,14 +410,16 @@ export default function Skills() {
             <header className="space-y-2">
                 <h1 className="text-3xl font-semibold">Skills — Interactive Roadmap</h1>
                 <p className="opacity-80">
-                    A narrative view of how my skills connect—from foundations to real-world impact.
-                    Click nodes to explore, or press Play for a guided tour.
+                    A brief story of how my skills connect—from core programming to bioinformatics and education technology.
                 </p>
             </header>
 
             {/* Roadmap */}
             <div className="rounded-2xl border border-neutral-200 dark:border-neutral-800 p-4">
                 <Roadmap active={active} onSelect={(id) => setActive(id)} />
+                <p className="mt-2 text-sm opacity-75">
+                    Use <strong>Play</strong> for a quick tour; click any milestone for details and examples.
+                </p>
                 <div className="mt-3 flex items-center gap-2">
                     <button
                         onClick={() => setPlaying((v) => !v)}
