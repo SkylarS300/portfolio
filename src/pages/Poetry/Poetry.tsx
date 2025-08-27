@@ -6,11 +6,39 @@ import { motion, AnimatePresence } from "framer-motion";
 export default function Poetry() {
     const [activeTag, setActiveTag] = useState<string>("ALL");
     const [openSlug, setOpenSlug] = useState<string | null>(null);
+    const [query, setQuery] = useState<string>("");
 
     const filtered: Poem[] = useMemo(() => {
-        if (activeTag === "ALL") return poems;
-        return poems.filter((p: Poem) => p.tags?.includes(activeTag));
-    }, [activeTag]);
+        const base = activeTag === "ALL"
+            ? poems
+            : poems.filter((p: Poem) => p.tags?.includes(activeTag));
+        if (!query.trim()) return base;
+        const q = query.toLowerCase();
+        return base.filter((p: Poem) =>
+            (p.title?.toLowerCase().includes(q)) ||
+            (p.content?.toLowerCase().includes(q))
+        );
+    }, [activeTag, query]);
+
+    function handleDownloadView() {
+        const lines: string[] = [];
+        filtered.forEach((p) => {
+            lines.push(p.title || "Untitled");
+            if (p.date) lines.push(p.date);
+            if (p.tags?.length) lines.push(`[${p.tags.join(", ")}]`);
+            lines.push("");
+            lines.push(p.content || "");
+            lines.push("\n---\n");
+        });
+        const blob = new Blob([lines.join("\n")], { type: "text/plain" });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = "poems_selection.txt";
+        a.click();
+        URL.revokeObjectURL(url);
+    }
+
 
     const current: Poem | null = useMemo(
         () => poems.find((p: Poem) => p.slug === openSlug) ?? null,
@@ -26,23 +54,44 @@ export default function Poetry() {
                 </p>
             </header>
 
-            {/* Tag filter bar */}
-            <div className="flex flex-wrap gap-2">
-                <button
-                    className={`px-3 py-1.5 rounded-full border border-neutral-300 dark:border-neutral-700 ${activeTag === "ALL" ? "bg-neutral-200 dark:bg-neutral-800" : ""}`}
-                    onClick={() => setActiveTag("ALL")}
-                >
-                    All
-                </button>
-                {poemTags.map((t) => (
+            {/* Controls: search + download + tags */}
+            <div className="flex flex-col gap-3">
+                {/* Row 1: search + download */}
+                <div className="flex items-center gap-2">
+                    <input
+                        value={query}
+                        onChange={(e) => setQuery(e.target.value)}
+                        placeholder="Search poems by title or text…"
+                        className="w-full rounded-lg border border-neutral-300 dark:border-neutral-700 bg-transparent px-3 py-2 outline-none focus:ring-2 focus:ring-neutral-300 dark:focus:ring-neutral-700"
+                        aria-label="Search poems"
+                    />
                     <button
-                        key={t}
-                        className={`px-3 py-1.5 rounded-full border border-neutral-300 dark:border-neutral-700 ${activeTag === t ? "bg-neutral-200 dark:bg-neutral-800" : ""}`}
-                        onClick={() => setActiveTag(t)}
+                        onClick={handleDownloadView}
+                        className="shrink-0 rounded-lg border border-neutral-300 dark:border-neutral-700 px-3 py-2 text-sm hover:bg-neutral-100 dark:hover:bg-neutral-900"
+                        title="Download current selection as .txt"
                     >
-                        {t}
+                        Download current view
                     </button>
-                ))}
+                </div>
+
+                {/* Row 2: tag filter bar */}
+                <div className="flex flex-wrap gap-2">
+                    <button
+                        className={`px-3 py-1.5 rounded-full border border-neutral-300 dark:border-neutral-700 ${activeTag === "ALL" ? "bg-neutral-200 dark:bg-neutral-800" : ""}`}
+                        onClick={() => setActiveTag("ALL")}
+                    >
+                        All
+                    </button>
+                    {poemTags.map((t) => (
+                        <button
+                            key={t}
+                            className={`px-3 py-1.5 rounded-full border border-neutral-300 dark:border-neutral-700 ${activeTag === t ? "bg-neutral-200 dark:bg-neutral-800" : ""}`}
+                            onClick={() => setActiveTag(t)}
+                        >
+                            {t}
+                        </button>
+                    ))}
+                </div>
             </div>
 
             {/* Grid of titles (animated) */}

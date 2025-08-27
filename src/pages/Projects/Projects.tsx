@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { projects, type Project } from "@/data/projects";
+import { formatDate } from "@/lib/utils";
 
 export default function Projects() {
     const ordered: Project[] = [...projects].sort((a, b) => {
@@ -19,12 +20,20 @@ export default function Projects() {
                 {ordered.map((p: Project) => (
                     <li key={p.slug} className="rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden">
                         <Link to={`/projects/${p.slug}`} className="block">
-                            <div className="aspect-video bg-neutral-100 dark:bg-neutral-900 flex items-center justify-center">
+                            <div className="relative aspect-video bg-neutral-100 dark:bg-neutral-900 flex items-center justify-center">
                                 {p.image ? (
                                     <img src={p.image} alt={p.title} className="h-full w-full object-cover" />
                                 ) : (
                                     <div className="text-sm opacity-70">[placeholder screenshot]</div>
                                 )}
+                                {p.lastUpdated ? (
+                                    <span
+                                        className="absolute left-2 top-2 rounded-full bg-white/85 dark:bg-neutral-900/85 backdrop-blur px-2 py-0.5 text-[10px] font-medium border border-neutral-200 dark:border-neutral-800"
+                                        title={`Last updated ${formatDate(p.lastUpdated)}`}
+                                    >
+                                        Updated {formatDate(p.lastUpdated)}
+                                    </span>
+                                ) : null}
                             </div>
                             <div className="p-4">
                                 <h2 className="text-xl font-semibold">{p.title}</h2>
