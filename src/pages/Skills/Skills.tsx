@@ -294,20 +294,38 @@ function Roadmap({
                     };
                     return (
                         <g key={stage.id} transform={`translate(${cx}, ${cy})`}>
+                            {/* subtle halo pulse when active */}
+                            {isActive && (
+                                <motion.circle
+                                    r={18}
+                                    fill="none"
+                                    stroke={color.stroke}
+                                    strokeWidth={4}
+                                    className="ring-pulse"
+                                    initial={{ opacity: 0, scale: 1 }}
+                                    animate={{ opacity: 0.35, scale: 1.25 }}
+                                    transition={{ repeat: Infinity, duration: 1.8, ease: "easeOut" }}
+                                />
+                            )}
+
+                            {/* base node */}
                             <motion.circle
                                 r={isActive ? 14 : 10}
                                 fill="white"
                                 className="dark:fill-neutral-950"
                                 stroke={color.stroke}
                                 strokeWidth={isActive ? 6 : 4}
-                                initial={{ scale: 0.8, opacity: 0 }}
+                                initial={{ scale: 0.9, opacity: 0 }}
                                 animate={{ scale: 1, opacity: 1 }}
-                                transition={{ duration: 0.3 }}
+                                transition={{ duration: 0.25 }}
+                                whileHover={!isActive ? { scale: 1.05 } : undefined}
                             />
-                            {/* inline icon */}
-                            <g className={isActive ? "icon-bob" : ""} aria-hidden="true">
+
+                            {/* icon (static, crisp) */}
+                            <g aria-hidden="true">
                                 <Icon id={stage.id} stroke={color.stroke} />
                             </g>
+
                             {/* clickable ring */}
                             <motion.circle
                                 r={28}
@@ -317,7 +335,8 @@ function Roadmap({
                                 whileHover={{ scale: 1.05 }}
                                 aria-label={`Select ${stage.title}`}
                             />
-                            {/* label */}
+
+                            {/* label with glow for active; smart anchoring at edges */}
                             <motion.text
                                 x={0}
                                 y={isActive ? -32 : -28}
@@ -326,8 +345,8 @@ function Roadmap({
                             >
                                 {stage.title}
                             </motion.text>
-
                         </g>
+
                     );
                 })}
             </svg>
@@ -386,27 +405,21 @@ export default function Skills() {
     const nextId = STAGES[(idx + 1) % STAGES.length].id;
     const prevId = STAGES[(idx - 1 + STAGES.length) % STAGES.length].id;
 
-    // tiny story auto-advance
-    const timerRef = useRef<number | null>(null);
+    // story auto-advance: advance once per 2.2s; stop at last node
     useEffect(() => {
-        if (!playing) {
-            if (timerRef.current) cancelAnimationFrame(timerRef.current);
-            return;
-        }
-        const start = performance.now();
-        const tick = (t: number) => {
-            if (t - start > 2200) {
-                setActive((prev) => {
-                    const i = STAGES.findIndex((s) => s.id === prev);
-                    return STAGES[(i + 1) % STAGES.length].id;
-                });
-            }
-            timerRef.current = requestAnimationFrame(tick);
-        };
-        timerRef.current = requestAnimationFrame(tick);
-        return () => {
-            if (timerRef.current) cancelAnimationFrame(timerRef.current);
-        };
+        if (!playing) return;
+        const id = window.setInterval(() => {
+            setActive((prev) => {
+                const i = STAGES.findIndex((s) => s.id === prev);
+                if (i >= STAGES.length - 1) {
+                    // reached the end — stop playing
+                    setPlaying(false);
+                    return prev;
+                }
+                return STAGES[i + 1].id;
+            });
+        }, 2200);
+        return () => window.clearInterval(id);
     }, [playing]);
 
     // tint your starfield if you kept the event bridge
@@ -424,9 +437,9 @@ export default function Skills() {
                 tag === "input" || tag === "textarea" || (document.activeElement as HTMLElement | null)?.isContentEditable;
             if (isEditing) return;
             if (e.key === "ArrowRight") {
-                setActive(nextId);
+                if (idx < STAGES.length - 1) setActive(nextId);
             } else if (e.key === "ArrowLeft") {
-                setActive(prevId);
+                if (idx > 0) setActive(prevId);
             } else if (e.key === " ") {
                 e.preventDefault();
                 setPlaying((v) => !v);
@@ -434,7 +447,7 @@ export default function Skills() {
         };
         window.addEventListener("keydown", onKey);
         return () => window.removeEventListener("keydown", onKey);
-    }, [nextId, prevId]);
+    }, [idx, nextId, prevId]);
 
     return (
         <section className="space-y-8">
@@ -453,7 +466,7 @@ export default function Skills() {
                 </p>
                 <div className="mt-3 flex items-center gap-2">
                     <button
-                        onClick={() => setActive(prevId)}
+                        onClick={() => idx > 0 && setActive(prevId)}
                         className="rounded-lg border border-neutral-300 dark:border-neutral-700 px-3 py-1.5 text-sm hover:bg-neutral-100 dark:hover:bg-neutral-900"
                     >
                         ← Prev
@@ -466,7 +479,7 @@ export default function Skills() {
                         {playing ? "Pause" : "Play"} story
                     </button>
                     <button
-                        onClick={() => setActive(nextId)}
+                        onClick={() => idx < STAGES.length - 1 && setActive(nextId)}
                         className="rounded-lg border border-neutral-300 dark:border-neutral-700 px-3 py-1.5 text-sm hover:bg-neutral-100 dark:hover:bg-neutral-900"
                     >
                         Next →
