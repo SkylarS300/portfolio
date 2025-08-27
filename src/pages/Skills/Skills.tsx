@@ -340,6 +340,15 @@ function Roadmap({
  * ────────────────────────────────────────────────────────────────────────── */
 function StagePanel({ stage }: { stage: Stage }) {
     const color = colorClasses(stage.color);
+    // Stage-specific outcome sentence
+    const closing: Record<StageId, string> = {
+        foundations: "These tools let me prototype quickly and ship reliable features.",
+        frontend: "I focus on accessible, responsive UI with clear hierarchy and motion.",
+        datasci: "My analyses emphasize interpretability and reproducible notebooks.",
+        bioinfo: "I’ve run RNA-seq pipelines and communicated findings to non-technical audiences.",
+        commlead: "I mentor peers and maintain clear docs to keep teams moving.",
+        advocacy: "I build for classrooms and civic projects because technology should serve people.",
+    };
     return (
         <div className="rounded-2xl border border-neutral-200 dark:border-neutral-800 p-5 space-y-3">
             <div className="flex items-start justify-between gap-3">
@@ -405,6 +414,27 @@ export default function Skills() {
         window.dispatchEvent(new CustomEvent("stars:theme", { detail: { theme: stage.color } }));
     }, [idx]);
 
+
+    // Keyboard navigation: ← / → change stage, Space toggles Play
+    useEffect(() => {
+        const onKey = (e: KeyboardEvent) => {
+            const tag = (document.activeElement?.tagName || "").toLowerCase();
+            const isEditing =
+                tag === "input" || tag === "textarea" || (document.activeElement as HTMLElement | null)?.isContentEditable;
+            if (isEditing) return;
+            if (e.key === "ArrowRight") {
+                setActive(nextId);
+            } else if (e.key === "ArrowLeft") {
+                setActive(prevId);
+            } else if (e.key === " ") {
+                e.preventDefault();
+                setPlaying((v) => !v);
+            }
+        };
+        window.addEventListener("keydown", onKey);
+        return () => window.removeEventListener("keydown", onKey);
+    }, [nextId, prevId]);
+
     return (
         <section className="space-y-8">
             <header className="space-y-2">
@@ -421,6 +451,12 @@ export default function Skills() {
                     Use <strong>Play</strong> for a quick tour; click any milestone for details and examples.
                 </p>
                 <div className="mt-3 flex items-center gap-2">
+                    <button
+                        onClick={() => setActive(prevId)}
+                        className="rounded-lg border border-neutral-300 dark:border-neutral-700 px-3 py-1.5 text-sm hover:bg-neutral-100 dark:hover:bg-neutral-900"
+                    >
+                        ← Prev
+                    </button>
                     <button
                         onClick={() => setPlaying((v) => !v)}
                         className="rounded-lg border border-neutral-300 dark:border-neutral-700 px-3 py-1.5 text-sm hover:bg-neutral-100 dark:hover:bg-neutral-900"
