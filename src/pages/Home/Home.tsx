@@ -7,11 +7,13 @@ export default function Home() {
         projects.find((p: Project) => !!p.featured) ?? projects[0];
 
     const featuredPoem: Poem | undefined = poems[0];
+    const projectCount = projects.length;
+    const poemCount = poems.length;
 
     return (
-        <section className="space-y-8">
+        <section className="space-y-10">
             <h1 className="text-3xl md:text-4xl font-semibold">
-                I write code and poems for the same reason: to make sense of complicated worlds.
+                I write code and poems to make sense of complicated worlds.
             </h1>
 
             <div className="grid gap-6 md:grid-cols-2">
@@ -33,6 +35,23 @@ export default function Home() {
                         {(featuredPoem?.content ?? "").split("\n").slice(0, 3).join(" ")}…
                     </p>
                     <Link to="/poetry" className="underline">Read poetry →</Link>
+                </div>
+            </div>
+
+
+            {/* Quick stats (subtle flex) */}
+            <div className="grid gap-6 sm:grid-cols-3 text-center">
+                <div className="rounded-2xl border border-neutral-200 dark:border-neutral-800 p-6">
+                    <div className="text-3xl font-bold">{projectCount}</div>
+                    <div className="opacity-80">Projects built</div>
+                </div>
+                <div className="rounded-2xl border border-neutral-200 dark:border-neutral-800 p-6">
+                    <div className="text-3xl font-bold">{poemCount}</div>
+                    <div className="opacity-80">Poems published</div>
+                </div>
+                <div className="rounded-2xl border border-neutral-200 dark:border-neutral-800 p-6">
+                    <div className="text-3xl font-bold">∞</div>
+                    <div className="opacity-80">Ideas in progress</div>
                 </div>
             </div>
         </section>

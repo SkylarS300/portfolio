@@ -1,18 +1,19 @@
 import { useMemo, useState } from "react";
-import { poems, poemTags } from "@/data/poems";
+import { poems, poemTags, type Poem } from "@/data/poems";
 import PoemModal from "@/components/PoemModal";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function Poetry() {
     const [activeTag, setActiveTag] = useState<string>("ALL");
     const [openSlug, setOpenSlug] = useState<string | null>(null);
 
-    const filtered = useMemo(() => {
+    const filtered: Poem[] = useMemo(() => {
         if (activeTag === "ALL") return poems;
-        return poems.filter((p) => p.tags?.includes(activeTag));
+        return poems.filter((p: Poem) => p.tags?.includes(activeTag));
     }, [activeTag]);
 
-    const current = useMemo(
-        () => poems.find((p) => p.slug === openSlug) ?? null,
+    const current: Poem | null = useMemo(
+        () => poems.find((p: Poem) => p.slug === openSlug) ?? null,
         [openSlug]
     );
 
@@ -44,33 +45,41 @@ export default function Poetry() {
                 ))}
             </div>
 
-            {/* Grid of titles */}
+            {/* Grid of titles (animated) */}
             <ul className="grid gap-3 sm:grid-cols-2 md:grid-cols-3">
-                {filtered.map((p) => (
-                    <li key={p.slug}>
-                        <button
-                            className="w-full text-left rounded-xl border border-neutral-200 dark:border-neutral-800 p-4 hover:bg-neutral-50 dark:hover:bg-neutral-900"
-                            onClick={() => setOpenSlug(p.slug)}
+                <AnimatePresence>
+                    {filtered.map((p: Poem) => (
+                        <motion.li
+                            key={p.slug}
+                            layout
+                            initial={{ opacity: 0, y: 10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: -10 }}
+                            transition={{ duration: 0.2 }}
                         >
-                            <div className="font-semibold">{p.title}</div>
-                            <div className="text-sm opacity-70">{p.date}</div>
-                            {p.tags?.length ? (
-                                <div className="mt-2 flex flex-wrap gap-1">
-                                    {p.tags.map((t) => (
-                                        <span
-                                            key={t}
-                                            className="text-xs px-2 py-0.5 rounded-full border border-neutral-300 dark:border-neutral-700"
-                                        >
-                                            {t}
-                                        </span>
-                                    ))}
-                                </div>
-                            ) : null}
-                        </button>
-                    </li>
-                ))}
+                            <button
+                                className="w-full text-left rounded-xl border border-neutral-200 dark:border-neutral-800 p-4 hover:bg-neutral-50 dark:hover:bg-neutral-900"
+                                onClick={() => setOpenSlug(p.slug)}
+                            >
+                                <div className="font-semibold">{p.title}</div>
+                                <div className="text-sm opacity-70">{p.date}</div>
+                                {p.tags?.length ? (
+                                    <div className="mt-2 flex flex-wrap gap-1">
+                                        {p.tags.map((t: string) => (
+                                            <span
+                                                key={t}
+                                                className="text-xs px-2 py-0.5 rounded-full border border-neutral-300 dark:border-neutral-700"
+                                            >
+                                                {t}
+                                            </span>
+                                        ))}
+                                    </div>
+                                ) : null}
+                            </button>
+                        </motion.li>
+                    ))}
+                </AnimatePresence>
             </ul>
-
             {/* Modal */}
             <PoemModal
                 open={!!current}

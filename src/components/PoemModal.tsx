@@ -1,6 +1,8 @@
 import { X } from "lucide-react";
 import ReactMarkdown from "react-markdown";
 import remarkBreaks from "remark-breaks";
+import { useCallback } from "react";
+
 
 type Props = {
     open: boolean;
@@ -10,8 +12,20 @@ type Props = {
     content: string; // markdown/plaintext with \n
 };
 
+
 export default function PoemModal({ open, onClose, title, date, content }: Props) {
     if (!open) return null;
+
+    const handleDownload = useCallback(() => {
+        const blob = new Blob([`${title}\n\n${content}`], { type: "text/plain" });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement("a");
+        link.href = url;
+        link.download = `${title.replace(/\s+/g, "_")}.txt`;
+        link.click();
+        URL.revokeObjectURL(url);
+    }, [title, content]);
+
 
     return (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
@@ -29,8 +43,26 @@ export default function PoemModal({ open, onClose, title, date, content }: Props
                     >
                         <X size={18} />
                     </button>
-                    <h2 className="text-2xl font-semibold">{title}</h2>
-                    {date ? <p className="text-sm opacity-70 mt-1">{date}</p> : null}
+                    <div className="flex items-center justify-between gap-3 pr-8">
+                        <div>
+                            <h2 className="text-2xl font-semibold">{title}</h2>
+                            {date ? <p className="text-sm opacity-70 mt-1">{date}</p> : null}
+                        </div>
+                        <div className="flex gap-2 shrink-0">
+                            <button
+                                onClick={handleDownload}
+                                className="rounded-lg border border-neutral-200 dark:border-neutral-800 px-3 py-1 text-sm hover:bg-neutral-100 dark:hover:bg-neutral-900"
+                            >
+                                Download
+                            </button>
+                            <button
+                                onClick={onClose}
+                                className="rounded-lg border border-neutral-200 dark:border-neutral-800 px-3 py-1 text-sm hover:bg-neutral-100 dark:hover:bg-neutral-900"
+                            >
+                                Close
+                            </button>
+                        </div>
+                    </div>
                 </div>
 
                 {/* Content (scrolls, respects line breaks & spacing) */}
@@ -51,3 +83,5 @@ export default function PoemModal({ open, onClose, title, date, content }: Props
         </div>
     );
 }
+
+

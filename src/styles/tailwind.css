@@ -1,1 +1,18 @@
 @import "tailwindcss";
+
+.glow-mode {
+    background: radial-gradient(circle at center, #0ff3, transparent 70%),
+        radial-gradient(circle at 30% 30%, #f0f3, transparent 60%),
+        #000;
+    animation: pulse 8s infinite alternate;
+}
+
+@keyframes pulse {
+    from {
+        filter: brightness(1);
+    }
+
+    to {
+        filter: brightness(1.3);
+    }
+}
