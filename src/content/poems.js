@@ -2,6 +2,110 @@
 
 export const poems = [
     {
+        title: "a theory of reach, with hesitation",
+        date: "April 19, 2024",
+        tags: [
+            "attention",
+            "loss"
+        ],
+        content: `
+There are gestures I can no longer make without thinking of you—not in the way that *nostalgia announces itself*, but in the quieter, meaner way that muscles remember patterns long after the lesson has rotted out of them.
+
+I cannot look over my shoulder without imagining the shape of yours; I cannot tilt my head without recalling the precise angle your absence once cast across a room that no longer knows our names.
+
+This is not devotion. It is a kind of ongoing architectural collapse—*a cathedral of restraint losing its lintel by degrees*, so slowly that the dust feels like climate, like consequence, like inevitability.
+
+**I have never been beloved in the moment.**  
+I am the aftermath girl.  
+The one they remember only when the silence becomes too loud to sleep through.  
+My name is not in anyone’s mouth when they are happy.  
+And yet, I continue to carve my presence into the soft parts of other people’s attention as though permanence were something more than graffiti on a collapsing bridge.
+
+You never asked me to stay, which is why I never quite knew how to leave.
+
+You didn’t open doors.  
+You simply stood beside them with your hand resting near the frame, and I—*hungry for even the posture of welcome*—read an entire invitation out of the tilt of your wrist.
+
+There was nothing in your voice that called me forward.  
+Still, I stepped into every silence you left as though it had been shaped for my size, and then blamed myself for the echo.
+
+Some people love like open flame.  
+**You loved like a pilot light—functional, small, invisible unless the gas leaks.**
+
+You were not cruel.  
+You were never cruel.  
+But you moved like someone who had never been held accountable for staying still,  
+and I mistook that stillness for shelter.
+
+I have always been too porous for people who do not ask to be held.  
+It is a fault of my architecture:  
+to echo when no one speaks,  
+to absorb the weight of glances never meant for me and translate them into scripture.
+
+I once watched your mouth form a yawn  
+and found myself memorizing the soft violence of your molars,  
+as though they might someday crush something I loved and I needed to prepare.
+
+There is something particularly brutal about a face that does not light up when it sees you.  
+Not because it frowns, or looks away, or even falters.  
+But because it simply does not change.
+
+You looked at me the way rooms look at furniture:  
+not with distaste,  
+but with the impassive familiarity that suggests it’s been there too long to be seen.
+
+**And yet I kept hoping.**  
+Not with joy.  
+Not even with hope.  
+But with that strange version of survival where you convince yourself that proximity is proof,  
+that laughter is currency,  
+that if they didn’t want you there they would have asked you to go.
+
+*It is humiliating, the lengths we will go to justify our own erasure.*
+
+I do not remember what you smelled like.  
+I do not remember your birthday, your middle name, or how you took your coffee.  
+But I remember the way you leaned against a doorframe.  
+I remember the sound of your shoelaces dragging one quarter of a second behind your gait.  
+I remember the gap between your bottom two teeth,  
+and how I once imagined pressing my tongue into it  
+not because I wanted to kiss you,  
+but because I wanted to interrupt the endless procession of your indifference.
+
+It was not your presence that haunted—  
+it was *the architecture of your indifference*,  
+the brutalist geometry of your glances,  
+those moments where your shoulder slouched toward me like a reluctant orbit,  
+your elbow eclipsing the promise of intimacy in favor of inertia.
+
+**Once, I looked at you too long and you did not look back.**  
+That is the kind of memory I keep now.  
+Not moments, but interruptions.  
+Not touch, but the place where touch was almost chosen.  
+Not love, but the shape of a conversation where love might have been spoken,  
+had either of us been less careful with our exits.
+
+I think I could have loved you, if it had been permitted by the season.  
+Or the weather.  
+Or whatever god governs the allocation of attention in hallways where no one says goodbye.
+
+**I have spent years wanting to be held with reverence.**  
+But by the time you reached toward me—if you ever did—  
+all I had left to offer was a version of myself  
+so bent around your silence  
+that she no longer resembled anyone worth reaching for.
+
+I did not say your name, not even in silence,  
+not even in the second silence that follows the first—  
+the silence where remembering reshapes the original wound into a sculpture of restraint,  
+where the body learns to bow under the burden of might-have-been.
+
+And if you read this,  
+you will not recognize yourself,  
+which is how I’ll know it was real.
+`
+    },
+    {
         title: "Dear Pearlita,",
         date: "",
         tags: ["grief", "absence", "memory"],
@@ -150,110 +254,6 @@ you know.
 
 **love,**  
 the rest of me.
-`
-    },
-    {
-        title: "a theory of reach, with hesitation",
-        date: "April 19, 2024",
-        tags: [
-            "attention",
-            "loss"
-        ],
-        content: `
-There are gestures I can no longer make without thinking of you—not in the way that *nostalgia announces itself*, but in the quieter, meaner way that muscles remember patterns long after the lesson has rotted out of them.
-
-I cannot look over my shoulder without imagining the shape of yours; I cannot tilt my head without recalling the precise angle your absence once cast across a room that no longer knows our names.
-
-This is not devotion. It is a kind of ongoing architectural collapse—*a cathedral of restraint losing its lintel by degrees*, so slowly that the dust feels like climate, like consequence, like inevitability.
-
-**I have never been beloved in the moment.**  
-I am the aftermath girl.  
-The one they remember only when the silence becomes too loud to sleep through.  
-My name is not in anyone’s mouth when they are happy.  
-And yet, I continue to carve my presence into the soft parts of other people’s attention as though permanence were something more than graffiti on a collapsing bridge.
-
-You never asked me to stay, which is why I never quite knew how to leave.
-
-You didn’t open doors.  
-You simply stood beside them with your hand resting near the frame, and I—*hungry for even the posture of welcome*—read an entire invitation out of the tilt of your wrist.
-
-There was nothing in your voice that called me forward.  
-Still, I stepped into every silence you left as though it had been shaped for my size, and then blamed myself for the echo.
-
-Some people love like open flame.  
-**You loved like a pilot light—functional, small, invisible unless the gas leaks.**
-
-You were not cruel.  
-You were never cruel.  
-But you moved like someone who had never been held accountable for staying still,  
-and I mistook that stillness for shelter.
-
-I have always been too porous for people who do not ask to be held.  
-It is a fault of my architecture:  
-to echo when no one speaks,  
-to absorb the weight of glances never meant for me and translate them into scripture.
-
-I once watched your mouth form a yawn  
-and found myself memorizing the soft violence of your molars,  
-as though they might someday crush something I loved and I needed to prepare.
-
-There is something particularly brutal about a face that does not light up when it sees you.  
-Not because it frowns, or looks away, or even falters.  
-But because it simply does not change.
-
-You looked at me the way rooms look at furniture:  
-not with distaste,  
-but with the impassive familiarity that suggests it’s been there too long to be seen.
-
-**And yet I kept hoping.**  
-Not with joy.  
-Not even with hope.  
-But with that strange version of survival where you convince yourself that proximity is proof,  
-that laughter is currency,  
-that if they didn’t want you there they would have asked you to go.
-
-*It is humiliating, the lengths we will go to justify our own erasure.*
-
-I do not remember what you smelled like.  
-I do not remember your birthday, your middle name, or how you took your coffee.  
-But I remember the way you leaned against a doorframe.  
-I remember the sound of your shoelaces dragging one quarter of a second behind your gait.  
-I remember the gap between your bottom two teeth,  
-and how I once imagined pressing my tongue into it  
-not because I wanted to kiss you,  
-but because I wanted to interrupt the endless procession of your indifference.
-
-It was not your presence that haunted—  
-it was *the architecture of your indifference*,  
-the brutalist geometry of your glances,  
-those moments where your shoulder slouched toward me like a reluctant orbit,  
-your elbow eclipsing the promise of intimacy in favor of inertia.
-
-**Once, I looked at you too long and you did not look back.**  
-That is the kind of memory I keep now.  
-Not moments, but interruptions.  
-Not touch, but the place where touch was almost chosen.  
-Not love, but the shape of a conversation where love might have been spoken,  
-had either of us been less careful with our exits.
-
-I think I could have loved you, if it had been permitted by the season.  
-Or the weather.  
-Or whatever god governs the allocation of attention in hallways where no one says goodbye.
-
-**I have spent years wanting to be held with reverence.**  
-But by the time you reached toward me—if you ever did—  
-all I had left to offer was a version of myself  
-so bent around your silence  
-that she no longer resembled anyone worth reaching for.
-
-I did not say your name, not even in silence,  
-not even in the second silence that follows the first—  
-the silence where remembering reshapes the original wound into a sculpture of restraint,  
-where the body learns to bow under the burden of might-have-been.
-
-And if you read this,  
-you will not recognize yourself,  
-which is how I’ll know it was real.
 `
     },
     {
