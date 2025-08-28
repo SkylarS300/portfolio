@@ -2,6 +2,33 @@
 
 export const poems = [
     {
+        title: "Dear Pearlita,",
+        date: "",
+        tags: ["grief", "absence", "memory"],
+        content: `
+Dear Pearlita,
+
+Your absence arrives *not like a door closing* but *like a hallway lengthening*, each step farther from where it began, each wall retreating in silence until the geometry itself becomes hostile. I tell myself that *distance is ordinary*, that people die, that *oceans cannot be blamed for their size*, and yet every time I breathe I feel *the measurement of you* vanish, recalculated into something less forgiving: not miles, not days, but *a climate that settles into the body* until I can no longer tell *where grief ends and weather begins*.
+
+*To remember you is not to remember a face.* It is to recall the *texture of static* when the radio slips between stations, the way sound itself becomes blurred, indistinct, but charged with the insistence that something is trying to reach me. To remember you is to find myself inspecting groceries carried by strangers, convinced for one fragile second that a mismatched hem or the smell of garlic on skin might *collapse time*, might *undo the math of absence*. To remember you is to feel the body refusing, the muscles clenching around patterns that no longer have their source, to know that devotion does not feel like worship but like *architecture rotting* beam by beam until *collapse becomes indistinguishable from shelter*.
+
+*There is nothing clean about grief.* It is not nostalgia, not devotion, not reverence, not even love. It is *a corrosion*: a slow insistence of rust eating at the ironwork of memory, an ache lodged so deep it begins to impersonate the organs it inhabits.
+
+Pearlita, *I am still speaking to you in the tense of the living*, because absence is not enough to convince me otherwise. *Absence impersonates.* It *wears the fabric of strangers*, it slips into the machinery of daily life, it contaminates the rituals that should have nothing to do with loss. I find you in the aftertaste of bitterness, in the color of an evening sky, in the soft collapse of fruit left too long on the counter. I find you in static, in silence, in the unremarkable weight of a grocery bag in someone else’s hand. *Each appearance is brief and cruel*, a resurrection only long enough to remind me that *resurrection does not belong to us*.
+
+*Sometimes I wonder if memory itself is a kind of cruelty,* the way it replays not the miracle of your existence but the aftermath of your absence, not the cadence of your voice but the shock of its silence. It feels *less like remembering and more like inhabiting a ruin*, a place where the walls lean inward, where the floorboards sag under the weight of dust, where everything creaks with the sound of something about to give way. I do not walk through these halls to honor you—I walk through them because I cannot leave. *Grief has locked the doors and hidden the key*, and so I am left to circle endlessly, *a pilgrim trapped inside the reliquary of loss.*
+
+And when the world *turns ordinary again*, when the hours demand groceries and transit and conversation, *you arrive in the smallest fissures*, as though absence itself is clever enough *to disguise itself as presence.*
+
+I think of you when the sky turns the color of rusting iron, when evening clings to the buildings like a fever, when *silence develops its own gravity* and refuses to let me leave the room. I think of you when I taste bitterness at the back of my tongue, when fruit sours too quickly on the counter, when the kettle whines in a pitch that feels like mourning, when strangers pass me with bags of groceries and I catch a glimpse of mismatched fabric and for one impossible second it is you, your presence *threaded through the city like static* in a radio station.
+
+*This is what absence does: it impersonates.* It wears the fabric of strangers, it *hides in the machinery of daily life*, it corrupts the body’s simple rituals until *every taste, every sound, every gesture becomes haunted*. It does not allow me to remember you as you were; it insists on *inventing you everywhere I go*, and then *ripping you away again* in the moment I reach.
+
+Pearlita, I have come to believe you *never belonged to time at all.* You belonged to *some other register*, the one that speaks in repetition, in rupture, in the long corridors of what cannot be held. *Even death does not end you*—it only multiplies the angles from which your absence bends me.
+`
+    },
+
+    {
         title: "O God, Why Must I Swing at Ghosts",
         date: "January 3, 2023",
         tags: [
@@ -1998,7 +2025,6 @@ Even if You won’t.
         title: "The Microgravity of Unsaid Things",
         date: "July 10, 2025",
         tags: [
-            "unspoken",
             "grief"
         ],
         content: `
@@ -2554,13 +2580,13 @@ that’s all I do.
     {
         title: "In Which the Starlings Misrecall Their Lord",
         date: "2025-08",
-        tags: ["myth", "memory",],
+        tags: ["memory",],
         content: "We were not yet born when he walked the battlements, but the wind left his weight pressed into the ramparts, and we have been circling that print for generations.\n\nO, the Lord of Ashen Helm doth ride without stirrup, and the dust falleth from his cloak as bread to the ground.\n\nOur elders say his crown was a wheatsheaf. Our fledglings say it was a cinder. We only know that he looked upward too long, as though searching for the sky’s seam.\n\nWe name him in chorus, but the syllables change from beak to beak— in one throat he is Marrow-keeper, in another he is Hollow-of-the-Gate. Each time we tell it, the light in the story bends.\n\nO, he of the sable pennant that never did fray — though no thread remains to prove the claim.\n\nWhen the earth coughs its thaw through the cobblestones, we remember him as a man of glass boots. When the frost seals the hinges, he is a voice trapped in the bell’s bronze.\n\nPerhaps there was no lord. Perhaps we circle only the absence of a lord, a wind-shaped vacancy that once made a sound we loved.\n\nStill, we fly in his heraldry, arranging ourselves into the crooked star on his crest, that we might be seen from some balcony he may yet mistake for his own.",
     },
     {
         title: "The River Wears a Crown of Eels",
         date: "2025-08",
-        tags: ["nature", "myth",],
+        tags: ["nature"],
         content: "We remember when her banks were narrower, when the moon sat lower in the reeds, when the sky’s pulse quivered in our throats.\n\nWe have wrapped her brow for centuries — not in service, but in the quiet occupation of a body that will not deny us.\n\nO, the River so stately doth she keep her course, though the fields spill their thawed marrow into her.\n\nWe coil in her hairline eddies, threading her forehead with our unlit vowels, feeding on the drowned language that sloughs off boats.\n\nThere are names in our bellies you will never recall except in the fever where water presses your ears shut.\n\nSome say we are her jewels. Some say we are her sentence. But we know the truth — that she does not rule, only carries. That she does not crown, only tolerates.\n\nOnce, a girl came to drink at dusk. She thought the silver in the shallows was for her.\n\nO, but the Pelican doth dip more gently than we did.\n\nWhen night thickens to the color of our skin, we rise to the air’s damp cathedral and let the current write us loose, crown falling apart into a hundred black hyphens, returning to the grammar of the deep.",
     },
 

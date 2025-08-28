@@ -8,11 +8,13 @@ import Poetry from '../pages/Poetry/Poetry';
 import Resume from '../pages/Resume/Resume';
 import Contact from '../pages/Contact/Contact';
 import Skills from '../pages/Skills/Skills';
+import NotFound from '../pages/NotFound';
 
 export const router = createBrowserRouter([
     {
         path: '/',
         element: <App />,
+        errorElement: <NotFound />, // friendly fallback for route errors (including 404)
         children: [
             { index: true, element: <Home /> },
             { path: 'about', element: <About /> },
@@ -22,6 +24,7 @@ export const router = createBrowserRouter([
             { path: 'skills', element: <Skills /> },
             { path: 'resume', element: <Resume /> },
             { path: 'contact', element: <Contact /> },
+            { path: '*', element: <NotFound /> }, // catch-all for unmatched URLs
         ],
     },
 ]);
