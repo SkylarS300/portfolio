@@ -117,7 +117,7 @@ export default function Contact() {
                     </div>
 
                     <p className="text-sm opacity-70">
-                        Tip: include the program you’re with and the time window you prefer—faster reply.
+                        Want a quicker reply? Let me know which program you’re with and the times that work best for you! :)
                     </p>
                 </div>
 

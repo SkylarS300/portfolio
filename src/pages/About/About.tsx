@@ -5,36 +5,52 @@ import { motion, AnimatePresence } from "framer-motion";
 /** Facets (constellation points) mapped to starfield tints */
 type FacetId = "builder" | "researcher" | "writer" | "mentor";
 
-const FACETS: { id: FacetId; title: string; blurb: string; hue: "sky" | "emerald" | "rose" | "violet" }[] = [
-    {
-        id: "builder",
-        title: "Builder — LearnLoom",
-        blurb:
-            "I founded LearnLoom after discovering a 42% literacy rate at my school. Privacy-first reading tools and grammar quizzes, built with educators and aimed at NYC classrooms.",
-        hue: "sky",
-    },
-    {
-        id: "researcher",
-        title: "Researcher — Comp Bio / Genomics",
-        blurb:
-            "CMU Pre-College Computational Biology sparked deeper work in bioinformatics: RNA-seq pipelines, PCA/DE/enrichment, and biomarkers in cancer, circadian dysregulation, and fetal–tumor parallels.",
-        hue: "emerald",
-    },
-    {
-        id: "writer",
-        title: "Writer — Scholastic Awards",
-        blurb:
-            "I write to test ideas for precision and care. Creative work recognized by Scholastic; poetry and prose sharpen how I explain complex tech and biology for real readers.",
-        hue: "rose",
-    },
-    {
-        id: "mentor",
-        title: "Mentor & Leader",
-        blurb:
-            "Student Council VP; President of Peer Tutoring & Coding Clubs; National Honor Society. I’ve mentored with theCoderSchool, encouraged civic engagement (Voters of Tomorrow), and built public-facing data work (OurChoice × Bloomberg Technology).",
-        hue: "violet",
-    },
-];
+const FACETS: {
+    id: FacetId;
+    title: string;
+    blurb: string;
+    hue: "sky" | "emerald" | "rose" | "violet";
+    tagline: string;
+    chips: string[];
+}[] = [
+        {
+            id: "builder",
+            title: "Builder — LearnLoom",
+            blurb:
+                "I founded LearnLoom after discovering a 42% literacy rate at my school. Privacy-first reading tools and grammar quizzes, built with educators and aimed at NYC classrooms.",
+            hue: "sky",
+            tagline: "Ship small, reliable, privacy-first tools.",
+            chips: ["LearnLoom", "Next.js/MySQL", "Built w/ teachers"],
+        },
+        {
+            id: "researcher",
+            title: "Researcher — Comp Bio / Genomics",
+            blurb:
+                "CMU Pre-College Computational Biology sparked deeper work in bioinformatics: RNA-seq pipelines, PCA/DE/enrichment, and biomarkers in cancer, circadian dysregulation, and fetal–tumor parallels.",
+            hue: "emerald",
+            tagline: "RNA-seq → PCA/DE/Enrichment; figures that speak.",
+            chips: ["CMU PCCB", "Biomarkers", "Thousands of samples"],
+        },
+        {
+            id: "writer",
+            title: "Writer — Scholastic Awards",
+            blurb:
+                "Writing—poetry and prose—teaches me to explain complex ideas in tech and biology with clarity and care.",
+            hue: "rose",
+            tagline: "Clarity & care; language as a lab.",
+            chips: ["Scholastic awards", "Readings", "Editing"],
+        },
+        {
+            id: "mentor",
+            title: "Mentor & Leader",
+            blurb:
+                "Student Council VP; President of Peer Tutoring & Coding Clubs; NHS. Mentored with theCoderSchool; civic engagement with Voters of Tomorrow; public-facing data work with OurChoice × Bloomberg Technology.",
+            hue: "violet",
+            tagline: "Lead with docs, rituals, and good taste.",
+            chips: ["SC VP", "Peer Tutoring + Coding", "NHS"],
+        },
+    ];
+
 
 /** Curved timeline milestones (showcase projects & roles) */
 const TIMELINE = [
@@ -48,10 +64,10 @@ const TIMELINE = [
 
 /** Values (flip-cards) */
 const VALUES = [
-    { front: "Privacy", back: "Design for dignity. Track learning without tracking people. Ship consent and clear controls by default." },
-    { front: "Clarity", back: "Short sentences. Good names. Figures that speak. Explain as if readers matter—because they do." },
-    { front: "Curiosity", back: "Follow the question. From PCA to DE to enrichment; learn the biology behind the signal." },
-    { front: "Service", back: "Make tools that help classrooms and communities now, not someday. Impact over intrigue." },
+    { front: "Privacy", back: "Track learning without tracking people. Consent and clear controls by default." },
+    { front: "Clarity", back: "Short sentences. Good names. Figures that speak. Explain as if readers matter, because they do." },
+    { front: "Curiosity", back: "Follow the question. Learn the biology behind the signal." },
+    { front: "Service", back: "Making tools that help classrooms and communities now, not someday." },
 ];
 
 export default function About() {
@@ -63,6 +79,24 @@ export default function About() {
         window.dispatchEvent(new CustomEvent("stars:theme", { detail: { theme: hue } }));
         return () => { window.dispatchEvent(new CustomEvent("stars:theme", { detail: { theme: "neutral" } })); };
     }, [active]);
+
+    // Keyboard: ← / → to move across constellation
+    useEffect(() => {
+        const order: FacetId[] = FACETS.map(f => f.id);
+        const onKey = (e: KeyboardEvent) => {
+            if (e.key !== "ArrowLeft" && e.key !== "ArrowRight") return;
+            e.preventDefault();
+            const i = order.indexOf(active);
+            const next =
+                e.key === "ArrowRight"
+                    ? order[(i + 1) % order.length]
+                    : order[(i - 1 + order.length) % order.length];
+            setActive(next);
+        };
+        window.addEventListener("keydown", onKey);
+        return () => window.removeEventListener("keydown", onKey);
+    }, [active]);
+
 
     // word-by-word intro
     const intro = useMemo(
@@ -92,17 +126,30 @@ export default function About() {
 
                     {/* signature underline (SVG path draw) */}
                     <svg viewBox="0 0 600 60" className="mt-2 h-10 w-full" aria-hidden="true">
+                        {/* base stroke */}
                         <motion.path
                             d="M5,40 C120,10 220,70 340,30 S560,30 595,40"
                             fill="none"
                             stroke="currentColor"
-                            strokeOpacity={0.35}
+                            strokeOpacity={0.3}
                             strokeWidth="3"
                             initial={{ pathLength: 0 }}
                             animate={{ pathLength: 1 }}
                             transition={{ duration: 1.15, ease: "easeInOut", delay: 0.15 }}
                         />
+                        {/* shimmering overlay */}
+                        <motion.path
+                            d="M5,40 C120,10 220,70 340,30 S560,30 595,40"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="3"
+                            strokeOpacity={0.6}
+                            strokeDasharray="18 220"
+                            animate={{ strokeDashoffset: [240, 0] }}
+                            transition={{ duration: 2.8, ease: "easeInOut", repeat: Infinity }}
+                        />
                     </svg>
+
 
                     {/* constellation selector */}
                     <Constellation active={active} onPick={setActive} />
@@ -164,61 +211,88 @@ function Constellation({
         ["writer", "mentor"],
     ];
 
+    const hueColor: Record<string, string> = {
+        sky: "#38bdf8",
+        emerald: "#34d399",
+        rose: "#f43f5e",
+        violet: "#8b5cf6",
+    };
+    const facet = FACETS.find(f => f.id === active)!;
+    const tint = hueColor[facet.hue];
+
     return (
-        <div className="mt-2 rounded-xl border border-neutral-200 dark:border-neutral-800 p-3">
+        <div className="relative mt-2 rounded-xl border border-neutral-200 dark:border-neutral-800 p-3">
+            {/* Docked HUD tagline (no occlusion over nodes) */}
+            <div className="pointer-events-none absolute -top-4 left-1/2 -translate-x-1/2">
+                <div className="rounded-full border border-neutral-200/70 dark:border-neutral-800/70 bg-white/80 dark:bg-neutral-900/75 backdrop-blur px-3 py-1 text-xs">
+                    {facet.tagline}
+                </div>
+            </div>
+
             <svg viewBox="0 0 600 120" className="w-full h-[120px]">
-                {/* lines */}
+                {/* connecting lines */}
                 {lines.map(([a, b], i) => {
                     const A = nodes.find(n => n.id === a)!;
                     const B = nodes.find(n => n.id === b)!;
                     return (
-                        <motion.line
-                            key={i}
-                            x1={A.x}
-                            y1={A.y}
-                            x2={B.x}
-                            y2={B.y}
-                            stroke="currentColor"
-                            strokeOpacity={0.25}
-                            strokeWidth={2}
-                            initial={{ pathLength: 0 }}
-                            animate={{ pathLength: 1 }}
-                            transition={{ duration: 0.5, delay: 0.08 * i }}
-                        />
+                        <g key={i}>
+                            <motion.line
+                                x1={A.x}
+                                y1={A.y}
+                                x2={B.x}
+                                y2={B.y}
+                                stroke="currentColor"
+                                strokeOpacity={0.22}
+                                strokeWidth={2}
+                                initial={{ pathLength: 0 }}
+                                animate={{ pathLength: 1 }}
+                                transition={{ duration: 0.5, delay: 0.08 * i }}
+                            />
+                            {/* subtle shimmer accent behind nodes */}
+                            <motion.line
+                                x1={A.x}
+                                y1={A.y}
+                                x2={B.x}
+                                y2={B.y}
+                                stroke={tint}
+                                strokeWidth={2}
+                                strokeOpacity={0.35}
+                                strokeDasharray="4 12"
+                                animate={{ strokeDashoffset: [24, 0] }}
+                                transition={{ duration: 2.2, ease: "linear", repeat: Infinity }}
+                            />
+                        </g>
                     );
                 })}
+
                 {/* nodes */}
                 {nodes.map((n) => {
                     const isActive = active === n.id;
                     return (
                         <g key={n.id} transform={`translate(${n.x}, ${n.y})`}>
-                            {/* pulse ring when active */}
-                            <AnimatePresence>
-                                {isActive && (
-                                    <motion.circle
-                                        r={16}
-                                        fill="none"
-                                        stroke="currentColor"
-                                        strokeOpacity={0.35}
-                                        strokeWidth={3}
-                                        initial={{ opacity: 0, scale: 1 }}
-                                        animate={{ opacity: 0.4, scale: 1.25 }}
-                                        exit={{ opacity: 0, scale: 1 }}
-                                        transition={{ repeat: Infinity, duration: 1.6, ease: "easeOut" }}
-                                    />
-                                )}
-                            </AnimatePresence>
-
+                            {/* soft glow behind active */}
+                            {isActive && (
+                                <circle r={20} fill={tint} opacity={0.16} style={{ filter: "blur(10px)" }} />
+                            )}
+                            {/* orbiting tiny star */}
+                            {isActive && (
+                                <motion.g animate={{ rotate: 360 }} transition={{ duration: 7, repeat: Infinity, ease: "linear" }}>
+                                    <circle cx={0} cy={-20} r={2.2} fill={tint} opacity={0.9} />
+                                </motion.g>
+                            )}
+                            {/* node */}
                             <motion.circle
                                 r={10}
                                 className="cursor-pointer"
                                 fill="currentColor"
-                                style={{ opacity: isActive ? 0.9 : 0.6 }}
+                                style={{ opacity: isActive ? 0.95 : 0.6 }}
                                 onClick={() => onPick(n.id)}
                                 whileHover={{ scale: 1.06 }}
+                                transition={{ duration: 0.15 }}
                                 aria-label={`Select ${n.id}`}
                             />
-                            <text x={14} y={4} className="text-sm fill-current opacity-80 select-none">
+                            {/* label moved BELOW to avoid overlap */}
+                            <text x={0} y={22} textAnchor="middle" className="text-sm fill-current opacity-80 select-none">
                                 {FACETS.find(f => f.id === n.id)?.title.split(" — ")[0]}
                             </text>
                         </g>
@@ -229,9 +303,18 @@ function Constellation({
     );
 }
 
+
+
 /* ===== Facet detail card ===== */
 function FacetPanel({ id }: { id: FacetId }) {
     const facet = FACETS.find(f => f.id === id)!;
+    const hue: Record<string, string> = {
+        sky: "text-sky-400",
+        emerald: "text-emerald-400",
+        rose: "text-rose-400",
+        violet: "text-violet-400",
+    };
+
     return (
         <motion.div
             key={id}
@@ -241,12 +324,30 @@ function FacetPanel({ id }: { id: FacetId }) {
             exit={{ opacity: 0, y: -8 }}
             transition={{ duration: 0.25 }}
         >
+            {/* subtle accent bar */}
+            <div className={`h-1.5 w-16 rounded-full mb-3 ${hue[facet.hue]}`} />
+
             <div className="text-sm mb-1 opacity-70">Focus</div>
             <div className="text-lg font-semibold">{facet.title}</div>
             <p className="opacity-80 mt-1">{facet.blurb}</p>
+
+            {/* chips */}
+            {facet.chips?.length ? (
+                <div className="mt-3 flex flex-wrap gap-2">
+                    {facet.chips.map((c) => (
+                        <span
+                            key={c}
+                            className="text-xs px-2 py-0.5 rounded-full border border-neutral-300 dark:border-neutral-700"
+                        >
+                            {c}
+                        </span>
+                    ))}
+                </div>
+            ) : null}
         </motion.div>
     );
 }
+
 
 /* ===== Curved timeline (sorted + animated highlight) ===== */
 function Timeline() {

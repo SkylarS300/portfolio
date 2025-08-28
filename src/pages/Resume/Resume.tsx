@@ -23,7 +23,7 @@ export default function Resume() {
                 />
                 <div className="relative z-10 space-y-2">
                     <h1 className="text-3xl font-semibold">Resume</h1>
-                    <p className="opacity-80">Open as PDF or print directly. Preview is optional to keep the page snappy.</p>
+                    <p className="opacity-80">Open as PDF or print directly.</p>
 
                     <div className="flex flex-wrap gap-2 mt-2">
                         <a

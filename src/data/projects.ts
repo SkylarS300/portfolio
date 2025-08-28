@@ -28,7 +28,7 @@ export const projects: Project[] = [
         image: "/media/learnloom.png", // TODO: replace with real screenshot
         links: [
             { label: "Live site", href: "https://(your-url-here)" },
-            { label: "GitHub", href: "https://github.com/(your-repo)" },
+            { label: "GitHub", href: "https://github.com/SkylarS300/learn-loom-next-dev" },
         ],
         lastUpdated: "2025-08-20",
         featured: true,
@@ -52,8 +52,8 @@ export const projects: Project[] = [
         tags: ["bioinformatics", "react", "python"],
         image: "/media/transcriptome.png", // TODO placeholder
         links: [
-            { label: "Live demo", href: "https://(your-url-here)" },
-            { label: "GitHub", href: "https://github.com/(your-repo)" },
+            { label: "Live demo", href: "https://transcriptome-explorer.vercel.app/" },
+            { label: "GitHub", href: "https://github.com/SkylarS300/transcriptome-explorer" },
         ],
         featured: true,
         results: [
@@ -76,8 +76,8 @@ export const projects: Project[] = [
         tags: ["research", "genomics", "notebooks"],
         image: "/media/research-portfolio.png", // TODO placeholder
         links: [
-            { label: "Site / Notebooks", href: "https://(your-portfolio-url)" },
-            { label: "GitHub", href: "https://github.com/(your-repo)" },
+            { label: "Site / Notebooks", href: "https://skylars300.github.io/bioinformatics-portfolio/" },
+            { label: "GitHub", href: "https://github.com/SkylarS300/bioinformatics-portfolio" },
         ],
         featured: true,
         results: [
@@ -100,8 +100,8 @@ export const projects: Project[] = [
         tags: ["civics", "nlp", "web"],
         image: "/media/miranda.png", // TODO placeholder
         links: [
-            { label: "Live site", href: "https://(your-url-here)" },
-            { label: "GitHub", href: "https://github.com/(your-repo)" },
+            { label: "Live site", href: "https://miranda-webapp.vercel.app/" },
+            { label: "GitHub", href: "https://github.com/SkylarS300/miranda-webapp" },
         ],
         results: [
             "Aggregated rights info into a queryable JSON corpus; built prompt templates for reliable answers.",
@@ -123,8 +123,8 @@ export const projects: Project[] = [
         tags: ["data-viz", "advocacy", "maps"],
         image: "/media/ourchoice.png", // TODO placeholder
         links: [
-            { label: "Gallery", href: "https://(your-url-here)" },
-            { label: "GitHub", href: "https://github.com/(your-repo)" },
+            { label: "Gallery", href: "https://ourchoice.vercel.app/" },
+            { label: "GitHub", href: "https://github.com/SkylarS300/ourchoice" },
         ],
         results: [
             "Cleaned and joined multi-source datasets; produced 100+ interactive charts/maps.",
