@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <circle cx="32" cy="32" r="28" fill="#0ea5e9"></circle>
+  <circle cx="32" cy="32" r="18" fill="#1e3a8a"></circle>
+  <circle cx="32" cy="32" r="8" fill="#ffffff"></circle>
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"></feGaussianBlur>
+    <feMerge>
+      <feMergeNode in="blur"></feMergeNode>
+      <feMergeNode in="SourceGraphic"></feMergeNode>
+    </feMerge>
+  </filter>
+  <circle cx="32" cy="32" r="28" fill="none" stroke="#38bdf8" stroke-width="2" filter="url(#glow)"></circle>
+</svg>
