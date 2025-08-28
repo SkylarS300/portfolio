@@ -1,5 +1,4 @@
 import { Link, NavLink } from 'react-router-dom';
-import ThemeToggle from './ThemeToggle';
 
 export default function Navbar() {
     const linkCls = ({ isActive }: any) =>
@@ -16,7 +15,6 @@ export default function Navbar() {
                     <NavLink to="/skills" className={linkCls}>Skills</NavLink>
                     <NavLink to="/resume" className={linkCls}>Resume</NavLink>
                     <NavLink to="/contact" className={linkCls}>Contact</NavLink>
-                    <ThemeToggle />
                 </div>
             </nav>
         </header>
