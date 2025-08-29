@@ -289,7 +289,7 @@ function Roadmap({
                         frontend: "I focus on accessible, responsive UI with clear hierarchy and motion.",
                         datasci: "My analyses emphasize interpretability and reproducible notebooks.",
                         bioinfo: "I’ve run RNA-seq pipelines and communicated findings to non-technical audiences.",
-                        commlead: "I mentor peers and maintain clear docs to keep teams moving.",
+                        commlead: "I mentor peers and maintain clear docs to keep collaborative momentum.",
                         advocacy: "I build for classrooms and civic projects because technology should serve people.",
                     };
                     return (
