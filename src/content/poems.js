@@ -2208,7 +2208,6 @@ with the jaw.
         title: "The Strange Mercy of Temporary Things",
         date: "July 19, 2025",
         tags: [
-            "ephemeral",
             "gratitude",
             "coming-of-age"
         ],
