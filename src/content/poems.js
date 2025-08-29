@@ -107,7 +107,7 @@ which is how I’ll know it was real.
     },
     {
         title: "Dear Pearlita,",
-        date: "",
+        date: "August 27th, 2025",
         tags: ["grief", "absence", "memory"],
         content: `
 Dear Pearlita,
