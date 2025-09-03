@@ -27,7 +27,7 @@ export const projects: Project[] = [
         tags: ["education", "privacy", "web"],
         image: "/media/learnloom.png", // TODO: replace with real screenshot
         links: [
-            { label: "Live site", href: "https://(your-url-here)" },
+            { label: "Live site", href: "https://learnloom.xyz" },
             { label: "GitHub", href: "https://github.com/SkylarS300/learn-loom-next-dev" },
         ],
         lastUpdated: "2025-08-20",
