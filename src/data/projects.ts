@@ -23,14 +23,14 @@ export const projects: Project[] = [
         summary:
             "Privacy-first reading & grammar companion I built to restore confidence for students at my school.",
         role: "Full-stack (Next.js, MySQL, vanilla CSS); product & UX",
-        year: "2024–2025",
+        year: "2024–Present",
         tags: ["education", "privacy", "web"],
         image: "/media/learnloom.png", // TODO: replace with real screenshot
         links: [
             { label: "Live site", href: "https://learnloom.xyz" },
             { label: "GitHub", href: "https://github.com/SkylarS300/learn-loom-next-dev" },
         ],
-        lastUpdated: "2025-08-20",
+        lastUpdated: "Today",
         featured: true,
         results: [
             "Implemented text-to-speech, adaptive grammar quizzes, and reading tools.",
@@ -48,7 +48,7 @@ export const projects: Project[] = [
         summary:
             "React + FastAPI tool for PCA, differential expression, and enrichment to explore real RNA-seq datasets.",
         role: "Front-end React; Python API; data viz (Recharts/Plotly)",
-        year: "2025",
+        year: "2025-Present",
         tags: ["bioinformatics", "react", "python"],
         image: "/media/transcriptome.png", // TODO placeholder
         links: [
@@ -72,7 +72,7 @@ export const projects: Project[] = [
         summary:
             "Independent studies in gene expression (biomarkers, circadian dysregulation, tumor vs fetal mitosis).",
         role: "Data analysis (Pandas/Scanpy), visualization, scientific writing",
-        year: "2025",
+        year: "2025-Present",
         tags: ["research", "genomics", "notebooks"],
         image: "/media/research-portfolio.png", // TODO placeholder
         links: [
@@ -96,7 +96,7 @@ export const projects: Project[] = [
         summary:
             "A friendly rights-assistant chatbot powered by JSON legal data + LLM backend; deployed for easy access.",
         role: "Full-stack; prompt design; deployment",
-        year: "2024",
+        year: "2025",
         tags: ["civics", "nlp", "web"],
         image: "/media/miranda.png", // TODO placeholder
         links: [
