@@ -2,7 +2,7 @@
 
 I write code and poetry to make sense of complicated worlds.
 
-This site is a narrative-forward portfolio for college applications. It prioritizes **personality and clarity** while showcasing **technical craft**: dark mode, smooth routing, searchable/filterable content, and polished modals — all without distractions.
+This site is a narrative-forward portfolio for college applications. It prioritizes personality and clarity while showcasing technical craft: dark mode, smooth routing, searchable/filterable content, and polished modals.
 
 ---
 
