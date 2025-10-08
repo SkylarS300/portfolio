@@ -1,8 +1,6 @@
 # Skylar’s Portfolio — Personal & Creative
 
-I write code and poetry to make sense of complicated worlds.
-
-This site is a narrative-forward portfolio for college applications. It prioritizes personality and clarity while showcasing technical craft: dark mode, smooth routing, searchable/filterable content, and polished modals.
+This site is a narrative-forward portfolio for college applications. It prioritizes personality and clarity while showcasing technical craft.
 
 ---
 
@@ -34,8 +32,8 @@ export const poems = [
   {
     title: "The Microgravity of Unsaid Things",
     date: "2025-07",
-    tags: ["queerness", "longing", "memory"],
-    content: "_the room glows_\nwith a patience I borrowed\nfrom the sea…"
+    tags: ["longing", "memory"],
+    content: "…"
   },
   // add more…
 ];
