@@ -32,8 +32,8 @@ export const poems = [
   {
     title: "The Microgravity of Unsaid Things",
     date: "2025-07",
-    tags: ["queerness", "longing", "memory"],
-    content: "_the room glows_\nwith a patience I borrowed\nfrom the sea…"
+    tags: ["longing", "memory"],
+    content: "…"
   },
   // add more…
 ];
