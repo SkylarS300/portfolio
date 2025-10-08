@@ -6,7 +6,7 @@ This site is a narrative-forward portfolio for college applications. It prioriti
 
 ## Highlights
 
-- **Poetry** — Grid of titles with **tag filtering**.Modal preserves **line breaks/spacing** using `remark-breaks`, with a **scrolling body** so long poems stay readable.
+- **Poetry** — Grid of titles with **tag filtering**.  Modal preserves **line breaks/spacing** using `remark-breaks`, with a **scrolling body** so long poems stay readable.
 - **Projects** — Cards with **featured-first** order for admissions. Each detail page includes **role**, **year**, **summary**, **tags**, **links**, and a screenshot.
 - **Design** — **Dark/light** theme toggle (persisted), responsive layout, and optional typography polish.
 - **Code Quality** — TypeScript with strict mode, path alias `@/*`, clean file structure, and Vite for fast dev.
