@@ -2,25 +2,21 @@
 <html lang="en">
 
 <head>
-
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Skylar Schulsohn — Portfolio</title>
-  </head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Skylar Schulsohn — Portfolio</title>
 
   <script>
     (() => {
       try {
-        const saved = localStorage.getItem('theme');            // 'dark' | 'light' | null
+        const saved = localStorage.getItem('theme'); // 'dark' | 'light' | null
         const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
         const dark = saved ? saved === 'dark' : prefersDark;
         document.documentElement.classList.toggle('dark', dark);
       } catch { }
     })();
   </script>
-
 </head>
 
 <body>

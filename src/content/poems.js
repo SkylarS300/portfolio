@@ -124,7 +124,7 @@ Pearlita, *I am still speaking to you in the tense of the living*, because absen
 
 And when the world *turns ordinary again*, when the hours demand groceries and transit and conversation, *you arrive in the smallest fissures*, as though absence itself is clever enough *to disguise itself as presence.*
 
-I think of you when the sky turns the color of rusting iron, when evening clings to the buildings like a fever, when *silence develops its own gravity* and refuses to let me leave the room. I think of you when I taste bitterness at the back of my tongue, when fruit sours too quickly on the counter, when the kettle whines in a pitch that feels like mourning, when strangers pass me with bags of groceries and I catch a glimpse of mismatched fabric and for one impossible second it is you, your presence *threaded through the city like static* in a radio station.
+I think of you when the sky turns the color of rusting iron, when evening clings to the buildings like a fever, when silence develops its own gravity and refuses to let me leave the room. I think of you when I taste bitterness at the back of my tongue, when fruit sours too quickly on the counter, when the kettle whines in a pitch that feels like mourning, when strangers pass me with bags of groceries and I catch a glimpse of mismatched fabric and for one impossible second it is you, your presence threaded through the city like a lullaby leaking from my baby speaker in the dark, my fingers knotted in her hair as if its strands could tether me to sleep, the whole room swaying with that soft hum.
 
 *This is what absence does: it impersonates.* It wears the fabric of strangers, it *hides in the machinery of daily life*, it corrupts the body’s simple rituals until *every taste, every sound, every gesture becomes haunted*. It does not allow me to remember you as you were; it insists on *inventing you everywhere I go*, and then *ripping you away again* in the moment I reach.
 
@@ -349,7 +349,7 @@ And I say,
 `
     },
     {
-        title: "Don’t Look",
+        title: "Toy Soldier",
         date: "November 4, 2023",
         tags: [
             "childhood",
@@ -438,7 +438,7 @@ But they saw the before.
 They saw the twitch  
 before the storm.  
 
-**And they stayed.**  
+**And they stayed, my little toy soldiers.**  
 Which is more than I can say  
 for most things.
 `
