@@ -32,7 +32,7 @@ export default function Home() {
                 />
                 <div className="relative z-10 space-y-4">
                     <h1 className="text-3xl md:text-4xl font-semibold">
-                        I write code and poems to make sense of complicated worlds.
+                        A collection of my programming projects and poetry.
                     </h1>
                     {/* CTAs */}
                     <div className="flex flex-wrap gap-3">
