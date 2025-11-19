@@ -42,7 +42,7 @@ const STAGES: Stage[] = [
         id: "frontend",
         title: "Frontend / UI",
         blurb:
-            "Turning ideas into accessible, responsive interfaces with motion and polish.",
+            "Turning ideas into accessible, responsive interfaces.",
         color: "fuchsia",
         skills: ["React", "Recharts", "ArcGIS", "Looker Studio", "Vercel", "Render"],
     },
@@ -79,7 +79,7 @@ const STAGES: Stage[] = [
         id: "commlead",
         title: "Communication & Leadership",
         blurb:
-            "Leading teams and telling clear stories: writing, presenting, mentoring.",
+            "Leading teams: writing, presenting, and mentoring.",
         color: "violet",
         skills: [
             "Award-winning writer",
@@ -97,7 +97,7 @@ const STAGES: Stage[] = [
         id: "advocacy",
         title: "Advocacy & Impact",
         blurb:
-            "Building for education and civic tech; using code where it matters.",
+            "Building for education and civic tech; using programming for social good.",
         color: "rose",
         skills: ["LearnLoom (education)", "Civic tech (Miranda)", "Public ed (OurChoice)"],
     },
@@ -285,8 +285,8 @@ function Roadmap({
                     const isActive = active === stage.id;
                     const color = colorClasses(stage.color);
                     const closing: Record<StageId, string> = {
-                        foundations: "These tools let me prototype quickly and ship reliable features.",
-                        frontend: "I focus on accessible, responsive UI with clear hierarchy and motion.",
+                        foundations: "These tools let me prototype quickly and create reliable features.",
+                        frontend: "I focus on accessible, responsive UI.",
                         datasci: "My analyses emphasize interpretability and reproducible notebooks.",
                         bioinfo: "I’ve run RNA-seq pipelines and communicated findings to non-technical audiences.",
                         commlead: "I mentor peers and maintain clear docs to keep collaborative momentum.",
@@ -361,11 +361,11 @@ function StagePanel({ stage }: { stage: Stage }) {
     const color = colorClasses(stage.color);
     // Stage-specific outcome sentence
     const closing: Record<StageId, string> = {
-        foundations: "These tools let me prototype quickly and ship reliable features.",
-        frontend: "I focus on accessible, responsive UI with clear hierarchy and motion.",
+        foundations: "These tools let me prototype quickly and create reliable features.",
+        frontend: "I focus on accessible, responsive UI.",
         datasci: "My analyses emphasize interpretability and reproducible notebooks.",
         bioinfo: "I’ve run RNA-seq pipelines and communicated findings to non-technical audiences.",
-        commlead: "I mentor peers and maintain clear docs to keep teams moving.",
+        commlead: "I mentor peers and maintain clear docs to keep collaborative momentum.",
         advocacy: "I build for classrooms and civic projects because technology should serve people.",
     };
     return (
