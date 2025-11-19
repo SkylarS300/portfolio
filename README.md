@@ -1,6 +1,6 @@
 # Skylar’s Portfolio — Personal & Creative
 
-This site is a narrative-forward portfolio for college applications. It prioritizes personality and clarity while showcasing technical craft.
+This site is a narrative-forward portfolio for college applications.
 
 ---
 
