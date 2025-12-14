@@ -112,23 +112,23 @@ which is how I’ll know it was real.
         content: `
 Dear Pearlita,
 
-Your absence arrives *not like a door closing* but *like a hallway lengthening*, each step farther from where it began, each wall retreating in silence until the geometry itself becomes hostile. I tell myself that *distance is ordinary*, that people die, that *oceans cannot be blamed for their size*, and yet every time I breathe I feel *the measurement of you* vanish, recalculated into something less forgiving: not miles, not days, but *a climate that settles into the body* until I can no longer tell *where grief ends and weather begins*.
+Your absence arrives not like a door closing but like a hallway lengthening, each step farther from where it began, each wall retreating in silence until the geometry itself becomes hostile. I tell myself that distance is ordinary, that people die, that oceans cannot be blamed for their size, and yet every time I breathe I feel the measurement of you vanish, recalculated into something less forgiving: not miles, not days, but a climate that settles into the body until I can no longer tell where grief ends and weather begins.
 
-*To remember you is not to remember a face.* It is to recall the *texture of static* when the radio slips between stations, the way sound itself becomes blurred, indistinct, but charged with the insistence that something is trying to reach me. To remember you is to find myself inspecting groceries carried by strangers, convinced for one fragile second that a mismatched hem or the smell of garlic on skin might *collapse time*, might *undo the math of absence*. To remember you is to feel the body refusing, the muscles clenching around patterns that no longer have their source, to know that devotion does not feel like worship but like *architecture rotting* beam by beam until *collapse becomes indistinguishable from shelter*.
+To remember you is not to remember a face. It is to recall the texture of static when the radio slips between stations, the way sound itself becomes blurred, indistinct, but charged with the insistence that something is trying to reach me. To remember you is to find myself inspecting groceries carried by strangers, convinced for one fragile second that a mismatched hem or the smell of garlic on skin might collapse time, might undo the math of absence. To remember you is to feel the body refusing, the muscles clenching around patterns that no longer have their source, to know that devotion does not feel like worship but like architecture rotting beam by beam until collapse becomes indistinguishable from shelter.
 
-*There is nothing clean about grief.* It is not nostalgia, not devotion, not reverence, not even love. It is *a corrosion*: a slow insistence of rust eating at the ironwork of memory, an ache lodged so deep it begins to impersonate the organs it inhabits.
+There is nothing clean about grief. It is not nostalgia, not devotion, not reverence, not even love. It is a corrosion: a slow insistence of rust eating at the ironwork of memory, an ache lodged so deep it begins to impersonate the organs it inhabits.
 
-Pearlita, *I am still speaking to you in the tense of the living*, because absence is not enough to convince me otherwise. *Absence impersonates.* It *wears the fabric of strangers*, it slips into the machinery of daily life, it contaminates the rituals that should have nothing to do with loss. I find you in the aftertaste of bitterness, in the color of an evening sky, in the soft collapse of fruit left too long on the counter. I find you in static, in silence, in the unremarkable weight of a grocery bag in someone else’s hand. *Each appearance is brief and cruel*, a resurrection only long enough to remind me that *resurrection does not belong to us*.
+Pearlita, I am still speaking to you in the tense of the living, because absence is not enough to convince me otherwise. Absence impersonates. It wears the fabric of strangers, it slips into the machinery of daily life, it contaminates the rituals that should have nothing to do with loss. I find you in the aftertaste of bitterness, in the color of an evening sky, in the soft collapse of fruit left too long on the counter. I find you in static, in silence, in the unremarkable weight of a grocery bag in someone else’s hand. Each appearance is brief and cruel, a resurrection only long enough to remind me that resurrection does not belong to us.
 
-*Sometimes I wonder if memory itself is a kind of cruelty,* the way it replays not the miracle of your existence but the aftermath of your absence, not the cadence of your voice but the shock of its silence. It feels *less like remembering and more like inhabiting a ruin*, a place where the walls lean inward, where the floorboards sag under the weight of dust, where everything creaks with the sound of something about to give way. I do not walk through these halls to honor you—I walk through them because I cannot leave. *Grief has locked the doors and hidden the key*, and so I am left to circle endlessly, *a pilgrim trapped inside the reliquary of loss.*
+Sometimes I wonder if memory itself is a kind of cruelty, the way it replays not the miracle of your existence but the aftermath of your absence, not the cadence of your voice but the shock of its silence. It feels less like remembering and more like inhabiting a ruin, a place where the walls lean inward, where the floorboards sag under the weight of dust, where everything creaks with the sound of something about to give way. I do not walk through these halls to honor you—I walk through them because I cannot leave. Grief has locked the doors and hidden the key, and so I am left to circle endlessly, a pilgrim trapped inside the reliquary of loss.
 
-And when the world *turns ordinary again*, when the hours demand groceries and transit and conversation, *you arrive in the smallest fissures*, as though absence itself is clever enough *to disguise itself as presence.*
+And when the world turns ordinary again, when the hours demand groceries and transit and conversation, you arrive in the smallest fissures, as though absence itself is clever enough to disguise itself as presence.
 
 I think of you when the sky turns the color of rusting iron, when evening clings to the buildings like a fever, when silence develops its own gravity and refuses to let me leave the room. I think of you when I taste bitterness at the back of my tongue, when fruit sours too quickly on the counter, when the kettle whines in a pitch that feels like mourning, when strangers pass me with bags of groceries and I catch a glimpse of mismatched fabric and for one impossible second it is you, your presence threaded through the city like a lullaby leaking from my baby speaker in the dark, my fingers knotted in her hair as if its strands could tether me to sleep, the whole room swaying with that soft hum.
 
-*This is what absence does: it impersonates.* It wears the fabric of strangers, it *hides in the machinery of daily life*, it corrupts the body’s simple rituals until *every taste, every sound, every gesture becomes haunted*. It does not allow me to remember you as you were; it insists on *inventing you everywhere I go*, and then *ripping you away again* in the moment I reach.
+This is what absence does: it impersonates. It wears the fabric of strangers, it hides in the machinery of daily life, it corrupts the body’s simple rituals until every taste, every sound, every gesture becomes haunted. It does not allow me to remember you as you were; it insists on inventing you everywhere I go, and then ripping you away again in the moment I reach.
 
-Pearlita, I have come to believe you *never belonged to time at all.* You belonged to *some other register*, the one that speaks in repetition, in rupture, in the long corridors of what cannot be held. *Even death does not end you*—it only multiplies the angles from which your absence bends me.
+Pearlita, I have come to believe you never belonged to time at all. You belonged to some other register, the one that speaks in repetition, in rupture, in the long corridors of what cannot be held. Even death does not end you—it only multiplies the angles from which your absence bends me.
 `
     },
 
@@ -2858,8 +2858,76 @@ every time the wind changes.
 
 just in case.
 `
+    },
+
+    {
+        title: "Body of Day",
+        date: "November 12, 2025",
+        tags: ["memory", "tenderness"],
+        content: `
+The day was a body, and I was small enough to lie across its heartbeat.
+
+The ground held sunlight like a secret it did not know how to keep, dark and hot and humming through my damp shirt. I had just come from the water, the kind that turns everything slick and alive, and I thought, remember this.
+
+The sky was too enormous to touch, so I settled for the warmth pressed into my back. I did not know it yet, but that was the beginning of loving something invisible.
+
+I remember squinting straight into the light until color became sound, until the sun’s edge quivered and the world lost its outlines. The air pulsed gold behind my eyelids.
+
+I could feel the tiny rivers of heat crawling across the black surface beneath me, feel my heartbeat syncing to the slow shimmer of everything else. The playground sounds fell away: laughter, chains, sneakers against gravel. What remained was the hush of recognition.
+
+A child’s first knowing that the world was not outside her, but inside, radiant and infinite.
+
+I think I made a vow then, though it had no words. Just a small tightening somewhere behind my ribs, a promise to keep the feeling, to hide it somewhere safe so I could return to it when I was older and the air no longer smelled like rust and water. I did not know who I was saving it for. Maybe for myself, maybe for the version of me that would one day need proof that wonder was real. Maybe for you.
+
+Sometimes I think all memory is sunlight seen through closed eyes. The colors rearrange themselves, but the heat stays faithful. I could never tell whether I was the one absorbing the world or the world was absorbing me. Maybe that is what you are, the blur that erases the border.
+
+I wake up heavy most mornings. The new day does not knock. It just seizes the soft part of my neck and tilts my head toward the light. I let it.
+
+I think of the child still lying there, half soaked and half dreaming, trying to make a deal with time. If I remember this long enough, maybe I will not disappear.
+
+And then I do remember. Not the playground or the heat or the sound of the fountain, but the shape of an unnameable tenderness. Something I thought would vanish and did not. Something that calls itself you now, though it could just as easily be the sun, or a feeling, or the way the air pauses when your name moves through me.
+
+Sometimes I wonder if that promise ever left the air. Maybe it drifted, particle to particle, waiting for a body warm enough to hold it again. Maybe that is what this is, not remembering, but continuation. The same sunlight, the same pulse, just wearing different faces.
+
+When you laugh, the world flickers the way it did then, unbearable and gentle and so alive I can hardly stand it. And for a moment, I am both of us, the child and the witness, lying still in the bright ache of being, learning again how to keep it.
+`
+    },
+    {
+        title: "A Hymn from a Drunk",
+        date: "October 3, 2025",
+        tags: ["desire", "tenderness"],
+        content: `
+*Refrain*  
+Thank you, oops, you have a leaf in your hair.  
+Thank you for carrying the sun in your mouth  
+and shaking the gold from it like a dog.  
+Thank you for the ping pang striped blue of your naivety.
+
+*Refrain*  
+Thank you, oops, you have a leaf in your hair.  
+Thank you for the way lemon pound cake loves the tin.  
+Thank you for all the birds that maybe never loved the bees at all.  
+Thank you for every mushroom-capped vulnerability,  
+infectious fungus, naturalistic doom.
+
+*Refrain*  
+Thank you, oops, you have a leaf in your hair.  
+Thank you for ripping me in half  
+and smoothing the edges with your tongue.  
+Thank you for my left hand insisting  
+it is a separate animal.
+
+*Refrain (softly)*  
+Thank you, oops, you have a leaf in your hair.  
+Thank you for the chair  
+that stays warm long after you’ve left the room.
+`
     }
+
 ];
+
+
+
 
 export function renderLegacyPoemList(containerId = "poemList") {
     if (typeof window === "undefined") return;
