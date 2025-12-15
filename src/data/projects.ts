@@ -29,6 +29,7 @@ export const projects: Project[] = [
         links: [
             { label: "Live site", href: "https://learnloom.xyz" },
             { label: "GitHub", href: "https://github.com/SkylarS300/learn-loom-next-dev" },
+            { label: "Demo video", href: "https://www.youtube.com/watch?v=UIhb0CmdYBc&t=30s" },
         ],
         lastUpdated: "Today",
         featured: true,
