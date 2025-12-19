@@ -110,7 +110,7 @@ which is how I’ll know it was real.
         date: "August 27th, 2025",
         tags: ["grief", "absence", "memory"],
         content: `
-Dear Perlita,
+**Dear Perlita,**
 
 Your absence arrives not like a door closing but like a hallway lengthening, each step farther from where it began, each wall retreating in silence until the geometry itself becomes hostile. I tell myself that distance is ordinary, that people die, that oceans cannot be blamed for their size, and yet every time I breathe I feel the measurement of you vanish, recalculated into something less forgiving: not miles, not days, but a climate that settles into the body until I can no longer tell where grief ends and weather begins.
 
@@ -129,6 +129,9 @@ I think of you when the sky turns the color of rusting iron, when evening clings
 This is what absence does: it impersonates. It wears the fabric of strangers, it hides in the machinery of daily life, it corrupts the body’s simple rituals until every taste, every sound, every gesture becomes haunted. It does not allow me to remember you as you were; it insists on inventing you everywhere I go, and then ripping you away again in the moment I reach.
 
 Perlita, I have come to believe you never belonged to time at all. You belonged to some other register, the one that speaks in repetition, in rupture, in the long corridors of what cannot be held. Even death does not end you—it only multiplies the angles from which your absence bends me.
+
+**I miss you,
+Skylar**
 `
     },
 
