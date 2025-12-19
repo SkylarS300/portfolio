@@ -106,11 +106,11 @@ which is how I’ll know it was real.
 `
     },
     {
-        title: "Dear Pearlita,",
+        title: "Dear Perlita,",
         date: "August 27th, 2025",
         tags: ["grief", "absence", "memory"],
         content: `
-Dear Pearlita,
+Dear Perlita,
 
 Your absence arrives not like a door closing but like a hallway lengthening, each step farther from where it began, each wall retreating in silence until the geometry itself becomes hostile. I tell myself that distance is ordinary, that people die, that oceans cannot be blamed for their size, and yet every time I breathe I feel the measurement of you vanish, recalculated into something less forgiving: not miles, not days, but a climate that settles into the body until I can no longer tell where grief ends and weather begins.
 
@@ -118,7 +118,7 @@ To remember you is not to remember a face. It is to recall the texture of static
 
 There is nothing clean about grief. It is not nostalgia, not devotion, not reverence, not even love. It is a corrosion: a slow insistence of rust eating at the ironwork of memory, an ache lodged so deep it begins to impersonate the organs it inhabits.
 
-Pearlita, I am still speaking to you in the tense of the living, because absence is not enough to convince me otherwise. Absence impersonates. It wears the fabric of strangers, it slips into the machinery of daily life, it contaminates the rituals that should have nothing to do with loss. I find you in the aftertaste of bitterness, in the color of an evening sky, in the soft collapse of fruit left too long on the counter. I find you in static, in silence, in the unremarkable weight of a grocery bag in someone else’s hand. Each appearance is brief and cruel, a resurrection only long enough to remind me that resurrection does not belong to us.
+Perlita, I am still speaking to you in the tense of the living, because absence is not enough to convince me otherwise. Absence impersonates. It wears the fabric of strangers, it slips into the machinery of daily life, it contaminates the rituals that should have nothing to do with loss. I find you in the aftertaste of bitterness, in the color of an evening sky, in the soft collapse of fruit left too long on the counter. I find you in static, in silence, in the unremarkable weight of a grocery bag in someone else’s hand. Each appearance is brief and cruel, a resurrection only long enough to remind me that resurrection does not belong to us.
 
 Sometimes I wonder if memory itself is a kind of cruelty, the way it replays not the miracle of your existence but the aftermath of your absence, not the cadence of your voice but the shock of its silence. It feels less like remembering and more like inhabiting a ruin, a place where the walls lean inward, where the floorboards sag under the weight of dust, where everything creaks with the sound of something about to give way. I do not walk through these halls to honor you—I walk through them because I cannot leave. Grief has locked the doors and hidden the key, and so I am left to circle endlessly, a pilgrim trapped inside the reliquary of loss.
 
@@ -128,7 +128,7 @@ I think of you when the sky turns the color of rusting iron, when evening clings
 
 This is what absence does: it impersonates. It wears the fabric of strangers, it hides in the machinery of daily life, it corrupts the body’s simple rituals until every taste, every sound, every gesture becomes haunted. It does not allow me to remember you as you were; it insists on inventing you everywhere I go, and then ripping you away again in the moment I reach.
 
-Pearlita, I have come to believe you never belonged to time at all. You belonged to some other register, the one that speaks in repetition, in rupture, in the long corridors of what cannot be held. Even death does not end you—it only multiplies the angles from which your absence bends me.
+Perlita, I have come to believe you never belonged to time at all. You belonged to some other register, the one that speaks in repetition, in rupture, in the long corridors of what cannot be held. Even death does not end you—it only multiplies the angles from which your absence bends me.
 `
     },
 
