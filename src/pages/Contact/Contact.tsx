@@ -41,8 +41,8 @@ export default function Contact() {
         const vcard = [
             "BEGIN:VCARD",
             "VERSION:3.0",
-            "FN:Skylar Schulsohn",
-            "N:Schulsohn;Skylar;;;",
+            "FN:Skylar",
+            "N:;Skylar;;;",
             `EMAIL;TYPE=INTERNET:${EMAIL}`,
             `URL:${GITHUB}`,
             `URL:${LINKEDIN}`,
@@ -53,7 +53,7 @@ export default function Contact() {
         const url = URL.createObjectURL(blob);
         const a = document.createElement("a");
         a.href = url;
-        a.download = "Skylar-Schulsohn.vcf";
+        a.download = "Skylar-Contact.vcf";
         a.click();
         URL.revokeObjectURL(url);
     }

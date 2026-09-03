@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import Starfield from "@/components/Starfield";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 /** Facets (constellation points) mapped to starfield tints */
 type FacetId = "builder" | "researcher" | "writer" | "mentor";
@@ -359,13 +359,6 @@ function Timeline() {
         const m = y.match(/\d{4}/g);
         return m ? parseInt(m[0], 10) : 0;
     };
-    const endYear = (y: string): number => {
-        if (/ongoing/i.test(y)) return 3000;
-        const m = y.match(/\d{4}/g);
-        if (!m) return 0;
-        return parseInt(m[m.length - 1], 10);
-    };
-
     // ---- sort direction + ordered items
     const [dir, setDir] = useState<"asc" | "desc">("asc");
     const ordered: Item[] = useMemo(() => {

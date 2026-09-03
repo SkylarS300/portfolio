@@ -284,14 +284,6 @@ function Roadmap({
                     const cy = i % 2 === 0 ? h * 0.35 : h * 0.75;
                     const isActive = active === stage.id;
                     const color = colorClasses(stage.color);
-                    const closing: Record<StageId, string> = {
-                        foundations: "These tools let me prototype quickly and create reliable features.",
-                        frontend: "I focus on accessible, responsive UI.",
-                        datasci: "My analyses emphasize interpretability and reproducible notebooks.",
-                        bioinfo: "I’ve run RNA-seq pipelines and communicated findings to non-technical audiences.",
-                        commlead: "I mentor peers and maintain clear docs to keep collaborative momentum.",
-                        advocacy: "I build for classrooms and civic projects because technology should serve people.",
-                    };
                     return (
                         <g key={stage.id} transform={`translate(${cx}, ${cy})`}>
                             {/* subtle halo pulse when active */}

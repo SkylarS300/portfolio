@@ -9,13 +9,13 @@ export const poems = [
             "loss"
         ],
         content: `
-There are gestures I can no longer make without thinking of you—not in the way that *nostalgia announces itself*, but in the quieter, meaner way that muscles remember patterns long after the lesson has rotted out of them.
+There are gestures I can no longer make without thinking of you—not in the way that nostalgia announces itself, but in the quieter, meaner way that muscles remember patterns long after the lesson has rotted out of them.
 
 I cannot look over my shoulder without imagining the shape of yours; I cannot tilt my head without recalling the precise angle your absence once cast across a room that no longer knows our names.
 
-This is not devotion. It is a kind of ongoing architectural collapse—*a cathedral of restraint losing its lintel by degrees*, so slowly that the dust feels like climate, like consequence, like inevitability.
+This is not devotion. It is a kind of ongoing architectural collapse; a cathedral of restraint losing its lintel by degrees, so slowly that the dust feels like it was all inevitable anyway.
 
-**I have never been beloved in the moment.**  
+I have never been beloved in the moment.
 I am the aftermath girl.  
 The one they remember only when the silence becomes too loud to sleep through.  
 My name is not in anyone’s mouth when they are happy.  
@@ -24,23 +24,23 @@ And yet, I continue to carve my presence into the soft parts of other people’s
 You never asked me to stay, which is why I never quite knew how to leave.
 
 You didn’t open doors.  
-You simply stood beside them with your hand resting near the frame, and I—*hungry for even the posture of welcome*—read an entire invitation out of the tilt of your wrist.
+You simply stood beside them with your hand resting near the frame, and I—hungry for even the posture of welcome—read an entire invitation out of the tilt of your wrist.
 
 There was nothing in your voice that called me forward.  
 Still, I stepped into every silence you left as though it had been shaped for my size, and then blamed myself for the echo.
 
 Some people love like open flame.  
-**You loved like a pilot light—functional, small, invisible unless the gas leaks.**
+You loved like a pilot light—functional, small, invisible unless the gas leaks.
 
 You were not cruel.  
 You were never cruel.  
 But you moved like someone who had never been held accountable for staying still,  
-and I mistook that stillness for shelter.
+and I mistook that stillness for protection.
 
 I have always been too porous for people who do not ask to be held.  
 It is a fault of my architecture:  
 to echo when no one speaks,  
-to absorb the weight of glances never meant for me and translate them into scripture.
+to absorb the weight of glances never meant for me and misconstrue them.
 
 I once watched your mouth form a yawn  
 and found myself memorizing the soft violence of your molars,  
@@ -54,17 +54,17 @@ You looked at me the way rooms look at furniture:
 not with distaste,  
 but with the impassive familiarity that suggests it’s been there too long to be seen.
 
-**And yet I kept hoping.**  
+And yet I kept hoping.
 Not with joy.  
 Not even with hope.  
 But with that strange version of survival where you convince yourself that proximity is proof,  
 that laughter is currency,  
 that if they didn’t want you there they would have asked you to go.
 
-*It is humiliating, the lengths we will go to justify our own erasure.*
+It is humiliating, the lengths we will go to justify our own erasure.
 
 I do not remember what you smelled like.  
-I do not remember your birthday, your middle name, or how you took your coffee.  
+I do not remember your birthday, your middle name, or your favorite tea. 
 But I remember the way you leaned against a doorframe.  
 I remember the sound of your shoelaces dragging one quarter of a second behind your gait.  
 I remember the gap between your bottom two teeth,  
@@ -72,16 +72,15 @@ and how I once imagined pressing my tongue into it
 not because I wanted to kiss you,  
 but because I wanted to interrupt the endless procession of your indifference.
 
-It was not your presence that haunted—  
-it was *the architecture of your indifference*,  
+It was not your presence that haunted me but  
+the skeleton of your stoniness,  
 the brutalist geometry of your glances,  
 those moments where your shoulder slouched toward me like a reluctant orbit,  
 your elbow eclipsing the promise of intimacy in favor of inertia.
 
-**Once, I looked at you too long and you did not look back.**  
+Once, I looked at you too long and you did not look back.
 That is the kind of memory I keep now.  
-Not moments, but interruptions.  
-Not touch, but the place where touch was almost chosen.  
+Not touch, but the place where touch may have been chosen.  
 Not love, but the shape of a conversation where love might have been spoken,  
 had either of us been less careful with our exits.
 
@@ -89,7 +88,7 @@ I think I could have loved you, if it had been permitted by the season.
 Or the weather.  
 Or whatever god governs the allocation of attention in hallways where no one says goodbye.
 
-**I have spent years wanting to be held with reverence.**  
+I have spent years wanting to be held with sanctity.
 But by the time you reached toward me—if you ever did—  
 all I had left to offer was a version of myself  
 so bent around your silence  
@@ -110,7 +109,7 @@ which is how I’ll know it was real.
         date: "August 27th, 2025",
         tags: ["grief", "absence", "memory"],
         content: `
-**Dear Perlita,**
+Dear Perlita,
 
 Your absence arrives not like a door closing but like a hallway lengthening, each step farther from where it began, each wall retreating in silence until the geometry itself becomes hostile. I tell myself that distance is ordinary, that people die, that oceans cannot be blamed for their size, and yet every time I breathe I feel the measurement of you vanish, recalculated into something less forgiving: not miles, not days, but a climate that settles into the body until I can no longer tell where grief ends and weather begins.
 
@@ -130,8 +129,8 @@ This is what absence does: it impersonates. It wears the fabric of strangers, it
 
 Perlita, I have come to believe you never belonged to time at all. You belonged to some other register, the one that speaks in repetition, in rupture, in the long corridors of what cannot be held. Even death does not end you—it only multiplies the angles from which your absence bends me.
 
-**I miss you,
-Skylar**
+I miss you,
+Skylar
 `
     },
 
@@ -143,21 +142,21 @@ Skylar**
             "faith"
         ],
         content: `
-*I wrote her into ritual.*  
+I wrote her into ritual.  
 Braided her absence into the liturgy,  
 left teacups filled with still water beneath every doorway she passed through in a dream.  
-*I fasted on purpose,* just to feel devotion gnaw.  
+I fasted on purpose, just to feel devotion gnaw.  
 
-**O God,**  
-*I said nothing unbeautiful.*  
-*My silence was calligraphy.*  
-**My restraint: ornamental.**  
+O God,  
+I said nothing unbeautiful.  
+My silence was calligraphy.  
+My restraint: ornamental.  
 I bit my tongue until it blossomed. I offered it. She declined.  
 
 I kept her in a terrarium of my own tending—low light, lukewarm breath, each leaf a question she wouldn’t name. Still I misted her with metaphor, called the glass communion.  
 
-**O God,**  
-*was my altar not ironed?* *Did I not lace the linens with ache?*  
+O God,  
+was my altar not ironed? Did I not lace the linens with ache?  
 Did the oil not glisten like mercy?  
 
 She arrived like ash on the wind and I bowed like a reed.  
@@ -166,32 +165,32 @@ I built a throne of hush and crowned her with not-quites.
 
 She curtsied to my ache, and left before the psalm could dry. Still I sang it.  
 
-**O God—**  
-*was I not gentle enough with the blade?*  
-*Did I not tuck my rage beneath satin?*  
-*Was my grief too symmetrical to be called holy?*  
+O God—  
+was I not gentle enough with the blade?  
+Did I not tuck my rage beneath satin?  
+Was my grief too symmetrical to be called holy?  
 
 You built her spine from wax, laid her voice in a bed of silence, taught her to vanish by daylight.  
-I kissed her shadow and called it presence. *What sin is that?*  
+I kissed her shadow and called it presence. What sin is that?  
 
 She was not the ark I prayed for. But I poured myself in two by two—  
-*the hurt, the hope, the thunder, the hymn.*  
+the hurt, the hope, the thunder, the hymn.  
 
-*I bled like a benediction.* *I begged in lowercase.*  
+I bled like a benediction. I begged in lowercase.  
 I unbuttoned my lungs so she’d have somewhere to put her silence. Still she fled.  
 
-**O God,**  
-*was the altar not warm enough?* *Did the offering not hum sweetly?*  
-*Was the prayer too sharp, too living, too mine?*  
+O God,  
+was the altar not warm enough? Did the offering not hum sweetly?  
+Was the prayer too sharp, too living, too mine?  
 
-I confess I built her from bone-white longing and wrote her into every **Almost.**  
+I confess I built her from bone-white longing and wrote her into every Almost.  
 
 I have swung at mirrors, at echoes, at a girl made of hush and refusal.  
 
-**And I am tired.**  
+And I am tired.  
 
-**O God,**  
-*I am tired.* *May I sit now?* *May I rot in the garden quietly?* *May I forget the spell I cast to keep her when all she did was vanish?*`
+O God,  
+I am tired. May I sit now? May I rot in the garden quietly? May I forget the spell I cast to keep her when all she did was vanish?`
     },
     {
         title: "A Love Letter to the Tooth Under My Pillow",
@@ -201,7 +200,7 @@ I have swung at mirrors, at echoes, at a girl made of hush and refusal.
             "loss",
         ],
         content: `
-*dear little thing,*  
+dear little thing,  
 
 they said i should wait.  
 so i did.  
@@ -225,9 +224,9 @@ not you.
 they said: see?  
 what is lost becomes treasure.  
 
-but *i thought you were the treasure.*  
+but i thought you were the treasure.  
 
-(*i still do.*)  
+(i still do.)  
 
 i think about your tiny socket.  
 the quiet hole where you used to hum.  
@@ -236,26 +235,26 @@ you were the last thing i felt before sleep.
 
 sometimes i think you’re still in the wall.  
 or the mattress.  
-or *my mouth, if i open wide enough in dreams.*  
+or my mouth, if i open wide enough in dreams.  
 
 did it hurt?  
 being taken?  
 
 they said it was a fairy.  
-but *i heard boots.*  
-*breath.*  
+but i heard boots.  
+breath.  
 no wings.  
 just the sound of something rummaging.  
 
 did you ask to be stolen?  
 
-*i would’ve kept you,*  
+i would’ve kept you,  
 you know.  
-*i would’ve named you.*  
+i would’ve named you.  
 
-(*i still might.*)  
+(i still might.)  
 
-**love,**  
+love,  
 the rest of me.
 `
     },
@@ -277,7 +276,7 @@ the rug curled under itself.
 The lamp forgot how to glow.  
 
 She told me:  
-**I’m a volcano. You just can’t provoke me.**  
+I’m a volcano. You just can’t provoke me.  
 So I learned how not to be a match.  
 Or a twig.  
 Or loud socks.  
@@ -287,7 +286,7 @@ But sometimes I was.
 And then—  
 she broke the room.  
 
-I said, *you big, big volcano,*  
+I said, you big, big volcano,  
 but only inside my head,  
 where Neigh-Neigh couldn’t hear me  
 in case he tattled.  
@@ -298,7 +297,7 @@ Words had corners.
 If you opened them wrong, they sliced.  
 
 The brush had a song.  
-*Buzz-buzz-behave.*  
+Buzz-buzz-behave.  
 It left little kisses that turned purple  
 then yellow  
 then secret.  
@@ -313,7 +312,7 @@ At school, I said nothing.
 I practiced how to be undelicious.  
 
 The lady asked,  
-and I said: *No,*  
+and I said: No,  
 because I knew  
 doors had teeth  
 and trucks ate little girls who told stories.  
@@ -327,13 +326,13 @@ But I stayed.
 I stayed and got very clever.  
 
 I learned which footstep meant maybe  
-and which meant *run-now-or-hide-in-the-laundry-hamper.*  
+and which meant run-now-or-hide-in-the-laundry-hamper.  
 
 I learned to breathe inside my neck.  
 To eat air like it had splinters.  
 
 She said she was a volcano.  
-I said *okay.*  
+I said okay.  
 I never asked where all the lava went  
 after it swallowed the furniture.  
 
@@ -344,11 +343,11 @@ Little pockets of burn.
 Sometimes they rumble.  
 
 And I say,  
-*shhh.*  
-*Don't erupt like her.*  
-*Be good.*  
-*Be smoke.*  
-*Be small enough to survive.*
+shhh.  
+Don't erupt like her.  
+Be good.  
+Be smoke.  
+Be small enough to survive.
 `
     },
     {
@@ -359,7 +358,7 @@ And I say,
             "memory"
         ],
         content: `
-*(for Neigh-Neigh and Lion)*
+(for Neigh-Neigh and Lion)
 
 They knew.  
 They always knew.  
@@ -373,7 +372,7 @@ like the bows she made me wear on Sundays.
 Neigh-Neigh had one bent ear.  
 Lion’s thread was loose at the neck.  
 I never fixed them.  
-**Damage meant they belonged to me.**  
+Damage meant they belonged to me.  
 
 We were a trio of unsaids—  
 me, and the puppets,  
@@ -381,7 +380,7 @@ and the space under the couch
 where we hid the worst feelings.  
 
 Sometimes, I pressed them to my cheeks  
-so they'd *smell what fear looked like.*  
+so they'd smell what fear looked like.  
 
 Sometimes, I tucked them under the blanket  
 after she left,  
@@ -392,7 +391,7 @@ Lion’s stitched mouth
 tugged funny when I cried.  
 Neigh-Neigh’s eye was a little off-center,  
 like he was always  
-*almost looking at me.*  
+almost looking at me.  
 
 We held each other in the wrong ways—  
 me with my teeth,  
@@ -406,7 +405,7 @@ what they saw
 or why they didn’t stop it.  
 That was our deal.  
 
-**We kept the world folded**  
+We kept the world folded  
 inside the drawer  
 where secrets sleep in socks.  
 
@@ -419,7 +418,7 @@ that not everything left
 once the yelling stopped.  
 
 And some nights—  
-some *real, real bad nights*—  
+some real, real bad nights—  
 I held them like witnesses  
 who would never testify.  
 
@@ -441,7 +440,7 @@ But they saw the before.
 They saw the twitch  
 before the storm.  
 
-**And they stayed, my little toy soldiers.**  
+And they stayed, my little toy soldiers.  
 Which is more than I can say  
 for most things.
 `
@@ -457,14 +456,14 @@ for most things.
 What began as a hallway has unspooled into distance,  
 and I am still walking the same length of light that once dared me to feel welcome—  
 not urgently, not to rescue,  
-but *the way ivy reaches for a wall.*  
+but the way ivy reaches for a wall.  
 
 I was chosen in the way a hand might hover before touching glass,  
-*softly and with full awareness of its own warmth.*  
+softly and with full awareness of its own warmth.  
 I was chosen in glances,  
 in the way my name made space for itself in their mouths.  
 
-*My presence rang like something ancient and accidental.*  
+My presence rang like something ancient and accidental.  
 
 There were people here—  
 mouths shaped like memory,  
@@ -472,7 +471,7 @@ knees tucked beneath too-small chairs,
 all of us arranged like museum bones waiting to be mislabeled.  
 
 We said good morning the way fish might dream of air:  
-*too late, too soft, too holy to keep.*  
+too late, too soft, too holy to keep.  
 
 I folded joy into the lining of borrowed hours.  
 It was not mine.  
@@ -482,7 +481,7 @@ dripping orange onto my lap like a peeled sun.
 And I ate it.  
 And I did not thank it.  
 
-**And I knew better.**
+And I knew better.
 
 I began to bloom in unphotographable ways.  
 My laugh lived under my tongue for years  
@@ -491,9 +490,9 @@ and now it flies without feathers.
 Someone waved across a room  
 and I mistook it for forgiveness.  
 
-I learned the word for this is not *home.*  
-It is *threshold.*  
-It is *liminality.*  
+I learned the word for this is not home.  
+It is threshold.  
+It is liminality.  
 It is a staircase I only got to touch with one foot.  
 
 And now the ending—  
@@ -510,7 +509,7 @@ my face lit like a streetlamp no one remembers passing beneath.
 There is no tragedy here.  
 Only the soft entropy of joy unstitched,  
 unraveled in reverse,  
-*folding itself into fog like it never asked me to stay.*
+folding itself into fog like it never asked me to stay.
 `
     },
     {
@@ -521,102 +520,102 @@ unraveled in reverse,
             "desire",
         ],
         content: `
-*—tease this itch in my soul—*
+—tease this itch in my soul—
 
-**I.**  
+I.  
 Heaven is a room you can’t reach.  
 Las Vegas is the wallpaper pretending to be it.  
 I stood between them with lipstick on my teeth, asking the mirror if I was saved yet.  
 
-**II.**  
+II.  
 Someone dropped a prayer into the slot machine.  
 I touched it and heard angels coughing.  
-It came up empty, empty, *bloom.*  
+It came up empty, empty, bloom.  
 Coins poured like hymn.  
 You pulled the lever with your tongue.  
 It was enough. I wept.  
 
-**III.**  
+III.  
 Some nights, I mistake fluorescence for forgiveness.  
 Some nights, they’re the same.  
 The ceiling has chandeliers, but the sky won’t answer.  
 
-**IV.**  
+IV.  
 Heaven: too far.  
 Vegas: too bright.  
 I kissed a hallway just to feel something that didn’t vanish when the chorus hit.  
 
-**V.**  
+V.  
 The music dressed like a savior.  
 Sequins, static, synths.  
 I followed it into a room full of mirrors, each reflecting the future I couldn’t name.  
 
-**VI.**  
+VI.  
 They told me to ascend.  
 I took the elevator down.  
 It smelled like roses and gin and something no longer human.  
 
-**VII.**  
+VII.  
 In Heaven, they speak in hush.  
 In Vegas, it’s chorus and clatter.  
 But both shimmer when you’re lonely enough.  
 
-**VIII.**  
+VIII.  
 I saw a girl dissolving in neon.  
-She said her name was *Light.*  
-I asked if she meant *Grace or Electricity.*  
-She said, *Does it matter? You believed me either way.*  
+She said her name was Light.  
+I asked if she meant Grace or Electricity.  
+She said, Does it matter? You believed me either way.  
 
-**IX.**  
+IX.  
 The floor was always pulsing.  
-Not with life. *With reminder.*  
+Not with life. With reminder.  
 Each step a promise I knew would flicker out.  
 
-**X.**  
+X.  
 Las Vegas held me like a lie I wanted to live inside.  
 Heaven?  
 That was for someone cleaner. Someone quieter.  
 Someone who didn’t need glitter to feel seen.  
 
-**XI.**  
+XI.  
 I sang along to something wordless.  
 It sounded like drowning in perfume.  
 It sounded like angels with pawn shop wings.  
 
-**XII.**  
+XII.  
 The more I looked for Heaven, the more I ended up here:  
 carpet burn, perfume trails,  
 a chapel where no one believed and everyone wept anyway.  
 
-**XIII.**  
+XIII.  
 The light outside was artificial.  
 The light inside was myth.  
 So I stood in the doorway, burning slightly, trying not to pick.  
 
-**XIV.**  
+XIV.  
 Sometimes I dream of Heaven and wake up in the parking lot.  
 The stars blink like signage.  
 My mouth tastes like something divine left out too long.  
 
-**XV.**  
+XV.  
 There’s a song playing I can’t quite remember.  
 It knows me.  
 I dance anyway.  
 
-**XVI.**  
+XVI.  
 In the end, I think I was just chasing light.  
 Didn’t matter if it came from stained glass or a jackpot screen.  
 It touched me, and I let it.  
 
-**XVII.**  
+XVII.  
 Las Vegas never asked me to be good.  
 Heaven never asked me at all.  
 
-**XVIII.**  
+XVIII.  
 I just stayed where the music was loud.  
 Called it grace.  
 Called it home.  
-Called it *enough.*
+Called it enough.
 `
     },
     {
@@ -628,58 +627,58 @@ Called it *enough.*
             "restraint"
         ],
         content: `
-*(for the girl with the desk full of warnings)*
+(for the girl with the desk full of warnings)
 
-**1.** Choose a time when the hallway is loud.  
+1. Choose a time when the hallway is loud.  
 Crying should not be seen  
 unless it can be mistaken for breathing.  
 
-**2.** Hold the sound behind your tongue.  
+2. Hold the sound behind your tongue.  
 That’s where the teachers can’t grade it.  
 That’s where God might not hear.  
 
-**3.** If your knees shake, pretend it’s recess.  
+3. If your knees shake, pretend it’s recess.  
 Pretend your muscles are playing a game  
-called: *Don’t Show the Monster.*  
+called: Don’t Show the Monster.  
 
-**4.** Fold the cry like this:  
+4. Fold the cry like this:  
 corner to corner.  
 Like a note.  
 Like a sick day request.  
 Like an origami no one taught you to finish.  
 
-**5.** Swallow what doesn’t fit.  
+5. Swallow what doesn’t fit.  
 
-**6.** At lunch, say you’re just tired.  
+6. At lunch, say you’re just tired.  
 That’s a safe word.  
 It doesn’t scare the other kids.  
 
-**7.** If your hands won’t stop moving,  
+7. If your hands won’t stop moving,  
 tie them to pencil grips.  
 Staple your wrists to the desk with focus.  
 Watch them like they might commit treason.  
 
-**8.** If the cry comes back,  
+8. If the cry comes back,  
 stuff it into your hoodie sleeve  
 with the broken elastic.  
 No one looks there.  
-*Not even God.*  
+Not even God.  
 
-**9.** You will be called *too much* in a hundred synonyms.  
+9. You will be called too much in a hundred synonyms.  
 Accept each one like communion.  
-Nod. Swallow. Say: *Amen.*  
+Nod. Swallow. Say: Amen.  
 
-**10.** Before sleep,  
+10. Before sleep,  
 ask the ceiling to forget you.  
 
 Say:  
-*I’m sorry for being a storm in the shape of a girl.*  
+I’m sorry for being a storm in the shape of a girl.  
 Say:  
-*Make me quiet like the dead ones.*  
+Make me quiet like the dead ones.  
 Say:  
-*Please.*  
+Please.  
 
-**11.** Do not expect a reply.
+11. Do not expect a reply.
 `
     },
     {
@@ -690,7 +689,7 @@ Say:
             "divinity"
         ],
         content: `
-*For the ones who gave less than they promised*
+For the ones who gave less than they promised
 
 You fanned the flicker.  
 Fed me feathered falsehoods in fog.  
@@ -709,7 +708,7 @@ sank into the seams of your sentence—
 folded myself like a forecast unchecked.  
 
 I did not demand devotion.  
-(*I merely mouthed maybes—small ones, like moths.*)  
+(I merely mouthed maybes—small ones, like moths.)  
 Not quite need.  
 Not quite nothing.  
 Only the shape of a softness  
@@ -726,7 +725,7 @@ waned into whisper.
 You did not declare departure.  
 You dripped it—drop by dull drop—  
 through duller diction,  
-laced with *“maybe later”s*  
+laced with “maybe later”s  
 and half-digested hesitation.  
 
 I held the hush like holy water.  
@@ -734,7 +733,7 @@ Folded fragments.
 Not frantic.  
 Not fearless.  
 Not fine.  
-(*I was the volume you muted to keep your own calm.*)  
+(I was the volume you muted to keep your own calm.)  
 
 Your “fondness” frayed—  
 a fabric soaked, wrung out,  
@@ -764,8 +763,8 @@ You wanted the weather to wander.
 It did.  
 Left dew in my mouth  
 and dust in yours—  
-(*something unsaid  
-settling where the air should’ve been.*)  
+(something unsaid  
+settling where the air should’ve been.)  
 
 You cradled cacophony  
 and called it comfort.  
@@ -792,8 +791,8 @@ My name nestled between your molars—
 half-murmur, half-myth.  
 Muffled, perhaps mildly remembered.  
 Not unbeautiful.  
-(*Not beloved either.*)  
-(**That part matters.**)  
+(Not beloved either.)  
+(That part matters.)  
 
 We were not fire.  
 We fizzled in folds—  
@@ -822,9 +821,9 @@ you said you seldom saw.
 You stared—still—at it.  
 Didn’t not like it.  
 Didn’t want it either.  
-(*Only admired it the way one does wild animals—beautiful, but better behind glass.*)  
+(Only admired it the way one does wild animals—beautiful, but better behind glass.)  
 
-**What a marvel—**  
+What a marvel—  
 to make mourning feel minor.  
 To render ruin in lowercase.  
 To hush hurt  
@@ -848,23 +847,23 @@ I am the scratch,
 the static,  
 the smudge on the mirror you forgot was yours.  
 
-**I am**  
-**I am**  
-**I—**  
+I am  
+I am  
+I—  
 there was—  
 
-**O God.**  
-*O God, my vowels are backwards.*  
+O God.  
+O God, my vowels are backwards.  
 My mouth has forgotten the shape of praise.  
 I try to say something whole  
 but it melts into  
-**bitter art thou, who made me soft and left.**  
+bitter art thou, who made me soft and left.  
 
 There was a hallway.  
 With a window.  
 Or a mouth?  
 No. No.  
-*A mouth inside a hallway inside a hallway inside a house that hummed without light.*  
+A mouth inside a hallway inside a hallway inside a house that hummed without light.  
 
 You said—  
 You said something soft,  
@@ -872,14 +871,14 @@ I think.
 Or I thinked it.  
 Or I thunk through a throat not mine.  
 
-**O God, I did not ask for prophecy.**  
+O God, I did not ask for prophecy.  
 I asked for presence.  
 I did not demand a miracle.  
 I begged for a body to stay.  
 
 Nothing’s not wrong.  
 The wallpaper’s whispering in numbers—  
-*Six. Six. Sixteen.*  
+Six. Six. Sixteen.  
 Not peace, not mercy,  
 just numbers  
 spinning like old toys with no floor.  
@@ -887,24 +886,24 @@ spinning like old toys with no floor.
 Your laugh loops in lemonlight.  
 My teeth are velvet.  
 I bit the air and it bled.  
-**O God, what color is breath?**  
-*What does grief taste like on Your tongue?*  
+O God, what color is breath?  
+What does grief taste like on Your tongue?  
 
 Where are my feet?  
 Did I dream my feet?  
 Did I wear too much skin today?  
-**O God, was I greedy with form?**  
-*Did I house too much hope in one frame?*  
+O God, was I greedy with form?  
+Did I house too much hope in one frame?  
 
 Isn’t this what love looks like—  
 a chandelier made of maybe?  
 an ocean that apologizes  
 every time it swallows?  
 
-**Don’t look at me.**  
-**Don’t look.**  
-*(The light bent wrong when you did.)*  
-**O God, turn Your face from me—**  
+Don’t look at me.  
+Don’t look.  
+(The light bent wrong when you did.)  
+O God, turn Your face from me—  
 I am unfinished.  
 Your sculptor’s hands gave up mid-psalm.  
 
@@ -919,8 +918,8 @@ the pages
 the walls  
 my name.  
 
-**O God, do You remember my name?**  
-*Do You write it still on cracked parchment?*  
+O God, do You remember my name?  
+Do You write it still on cracked parchment?  
 Or did You smudge it out with someone softer?  
 
 And I—  
@@ -933,8 +932,8 @@ Only the echo of it
 in a morning whisper,  
 in the folds of linen over the table.  
 
-**I only know**  
-**I once was it.**
+I only know  
+I once was it.
 `
     },
     {
@@ -945,7 +944,7 @@ in the folds of linen over the table.
             "loss"
         ],
         content: `
-*(a poem without a name)*
+(a poem without a name)
 
 It was not loud.  
 Not fire. Not storm.  
@@ -954,7 +953,7 @@ that made room for breath I didn’t know I’d been holding.
 
 She reached in.  
 Or maybe I let her.  
-*Does it matter?*  
+Does it matter?  
 
 There was a time I believed in one hallway.  
 One scent. One cadence. One girl  
@@ -964,9 +963,9 @@ without apology.
 I did not know then  
 how many languages love speaks.  
 I only knew the first one  
-*sounded like safety.*  
+sounded like safety.  
 And therefore—  
-*truth.*  
+truth.  
 
 Since then:  
 others have spoken.  
@@ -980,14 +979,14 @@ Recoil from accents.
 
 Because to learn someone new  
 is to accept the forgetting.  
-Not of *her*—  
+Not of her—  
 but of the certainty  
 that she was the only one who could make me fluent.  
 
 And maybe she was.  
 
 Maybe that’s all this is:  
-*an echo of a room I’ve already left*  
+an echo of a room I’ve already left  
 still calling my name like it owns it.  
 
 I get tired sometimes  
@@ -1015,7 +1014,7 @@ The cracking.
 The way I opened like a fever.  
 The way I thought  
 that if she could reach me like that,  
-*she must have been the only one who ever would.*  
+she must have been the only one who ever would.  
 
 And maybe I still believe that, a little.  
 Enough to write this.  
@@ -1053,14 +1052,14 @@ Their shadows know my name.
 They weep like I used to:  
 with both feet still on the ground.  
 
-**Joy is not joy.**  
+Joy is not joy.  
 It is skin salted like meat left in the sun too long.  
 It is laughter that leaks out of the eye first.  
 It is the taste of someone else’s fingertip in your mouth  
 when you meant to bite your own.  
 
-As a child, I prayed not for death but for *removal.*  
-For *unchilding.*  
+As a child, I prayed not for death but for removal.  
+For unchilding.  
 For forgetting.  
 
 For God to turn the lights off so thoroughly  
@@ -1076,12 +1075,12 @@ until the juice stained me sweet enough to keep.
 
 I would have made a home in the ache  
 between the second sniff  
-and the voice that says *that’s enough now, come in.*  
+and the voice that says that’s enough now, come in.  
 
 But I was not given the field.  
 Only the fence.  
 Only the view through finger-wide gaps,  
-watching the world *unbloom*  
+watching the world unbloom  
 without me.
 `
     },
@@ -1114,7 +1113,7 @@ I talk to the fridge hum.
 Count the breaths between light flickers.  
 Hold spoons like they're weapons.  
 
-**No one yells when I spill.**  
+No one yells when I spill.  
 
 No one checks the air  
 like it owes them something.  
@@ -1124,13 +1123,13 @@ Or, she went somewhere else to thunder.
 I don’t ask.  
 
 But I miss  
-*being a shape that made sense.*  
+being a shape that made sense.  
 
 I miss flinching with purpose.  
 
 I miss the way I could disappear  
 like magic—  
-*Look what I can do: no sound at all.*  
+Look what I can do: no sound at all.  
 
 Now I only vanish because I’m empty.  
 
@@ -1138,7 +1137,7 @@ Now I bruise on accident.
 
 Now I cry,  
 and no one says  
-*Why’d you make me do that?*  
+Why’d you make me do that?  
 
 It’s supposed to be better.  
 And maybe it is.  
@@ -1156,7 +1155,7 @@ to impress with it.
             "girlhood",
         ],
         content: `
-**oh, how I**  
+oh, how I  
 
 oh, how I would carry her—  
 not with arms, but with every reckless thing in me.  
@@ -1196,8 +1195,8 @@ where I pretend not to notice her noticing me.
 oh, how I would hum against her spine.  
 sunscreen still drying on her back.  
 her breath caught in the crook of my elbow.  
-*tell me again that I’m too much.*  
-*tell me again that I laugh too loudly—*  
+tell me again that I’m too much.  
+tell me again that I laugh too loudly—  
 and I’ll laugh louder.  
 just to hear it echo off her ribs.  
 
@@ -1208,11 +1207,11 @@ my lemonade forgotten—
 
 and still,  
 still,  
-*still*  
+still  
 I’d sit there.  
 
 until the sky went violet  
-and she said *“stay”*  
+and she said “stay”  
 like it was something I’d never done before.  
 
 oh, how I would believe her.
@@ -1226,65 +1225,65 @@ oh, how I would believe her.
             "survival"
         ],
         content: `
-*(a phonics lesson in fear and survival)*
+(a phonics lesson in fear and survival)
 
-**A** is for Asking.  
+A is for Asking.  
  Always a mistake.  
 
-**B** is for Bent backs, bitten blankets, blunted bones, bruised behind bathroom doors.  
+B is for Bent backs, bitten blankets, blunted bones, bruised behind bathroom doors.  
  Because bravery breeds beatings.  
  Be better. Be blank. Be…  
  Be…  
 
-**C** is for Crying,  
+C is for Crying,  
  which cost too much.  
 
-**D** is for Doormat.  
+D is for Doormat.  
  Which is not a metaphor.  
 
-**E** is for Empty.  
+E is for Empty.  
  My cup. Her eyes.  
 
-**F** is for Forgotten fork flung fast,  
+F is for Forgotten fork flung fast,  
  fizzing fear from fingers to face.  
  Fine. I'm fine. I'm full. Finished.  
 
-**G** is for Ghost-girl glancing, grasping, gone.  
+G is for Ghost-girl glancing, grasping, gone.  
 
-**H** is for Hollow hushes humming hard,  
+H is for Hollow hushes humming hard,  
  held hostage halfway home.  
 
-**I** is for Invisible.  
+I is for Invisible.  
  Which worked, sometimes.  
 
-**J** is for Jammed jaw. Just jokes. Just jello. Just—just—just—  
+J is for Jammed jaw. Just jokes. Just jello. Just—just—just—  
 
-**K** is for Kitchen.  
+K is for Kitchen.  
  Knives never stayed in drawers long.  
 
-**L** is for  
+L is for  
  “Louder, little liar!  
  Lift lips. Lose love.  
  Learn: late looks lead lashes.”  
 
-**M** is for Muttered maybes.  
+M is for Muttered maybes.  
 
-**N** is for Never.  
+N is for Never.  
  No.  
  Not now.  
  Not that.  
 
-**O** is for Obey.  
+O is for Obey.  
 
-**P** is for Puppets. Pretend. Plates.  
+P is for Puppets. Pretend. Plates.  
  Punished.  
  Panic packed in pink pajamas.  
 
-**Q** is for Quiet.  
+Q is for Quiet.  
 
-**R** is for Run.  
+R is for Run.  
 
-**S** is for  
+S is for  
  “Softer, smaller, silent.  
  Stop speaking.  
  Stop shifting.  
@@ -1293,21 +1292,21 @@ oh, how I would believe her.
  I’m good I’m good I’m—SORRY.  
  Sink. Still. Stay.”  
 
-**T** is for Tired teeth. Tangled thoughts. Tuesday tantrums.  
+T is for Tired teeth. Tangled thoughts. Tuesday tantrums.  
 
-**U** is for Used to it.  
+U is for Used to it.  
 
-**V** is for Voice, vanished.  
+V is for Voice, vanished.  
 
-**W** is for Waited.  
+W is for Waited.  
  Wanted.  
  Wrong.  
 
-**X** is for X-marked-spots where hands shouldn’t have been.  
+X is for X-marked-spots where hands shouldn’t have been.  
 
-**Y** is for Yelled. Yearned. Yielded.  
+Y is for Yelled. Yearned. Yielded.  
 
-**Z** is for  
+Z is for  
  “Zippers zipped.  
  Zero zones.  
  Zebra-printed, zipped-up, zombie-child  
@@ -1896,7 +1895,7 @@ Only one girl
             "loss"
         ],
         content: `
-*(a speech to memory, then to God)*  
+(a speech to memory, then to God)  
 
 I did not fall in love—no, it was softer than that,  
  like a silence slipping beneath the ribs,  
@@ -2054,7 +2053,7 @@ She was not unaware of her goodness,
  the way a violin doesn’t know the bow is blessing it—  
 so I wanted, without wanting, to lay something down in her  
 without laying claim,  
-to speak *you are so good*  
+to speak you are so good  
  not aloud  
  but into the little hollow behind her knee,  
  where God might still be hiding.  
@@ -2109,14 +2108,14 @@ And maybe, then,
  into the soft, sun-stained groove where the back of her knee would go,  
  into the hush between my reach and her flinch,  
  into the sediment of sentences I mouthed against the silence,  
- into the split peach of a word like *stay* left to rot on a windowsill.  
+ into the split peach of a word like stay left to rot on a windowsill.  
 
 Like bus seat leather in summer,  
  still warm with someone else’s absence,  
  still giving when pressed.  
  A place held longer than it should have been.  
 
-Like *beautiful* bitten back before it could bloom.  
+Like beautiful bitten back before it could bloom.  
 
 Like a mirror buried face-down in soil too long and coming up with eyes.  
 
@@ -2124,7 +2123,7 @@ Like the throat of a bell that never learned its name but rings anyway.
 
 Like a word I wasn’t allowed to say gathering spores in my bloodstream.  
 
-Like a *yes* that died in its sleep beside the bed.
+Like a yes that died in its sleep beside the bed.
 `
     },
     {
@@ -2273,7 +2272,7 @@ pressing palms to earth like apology.
 They called that  
 witness.  
 
-**  
+  
 
 There was a cup once—  
 white outside, blue where the mouth goes.  
@@ -2288,7 +2287,7 @@ curdles into thirst.
 She drank.  
 She disappeared.  
 
-**  
+  
 
 It wasn’t sudden.  
 The world had been inching toward her since birth,  
@@ -2319,7 +2318,7 @@ They called it accident.
 They called it madness.  
 They said she was lucky he cried after.  
 
-**  
+  
 
 The body remembers what the world denies.  
 So it folded.  
@@ -2327,7 +2326,7 @@ So it let itself be broken,
 gently,  
 like a gift the giver didn’t wrap.  
 
-**  
+  
 
 The town heard about it like wind through shutters.  
 No one opened the door.  
@@ -2343,7 +2342,7 @@ just softer,
 just blue,  
 maybe even God would take her back.  
 
-**  
+  
 
 The man who wrote letters to heaven  
 used her like parchment.  
@@ -2352,7 +2351,7 @@ He meant: Let her stop being real.
 Let her be pretty enough to forget.  
 Let her die slowly in a way that looks like holiness.  
 
-**  
+  
 
 There was no trial.  
 No gospel.  
@@ -2365,7 +2364,7 @@ and nothing bloomed.
 She thought it was her fault.  
 So did they.  
 
-**  
+  
 
 She is not your metaphor.  
 She is not your warning.  
@@ -2392,7 +2391,7 @@ after never being seen.
             "language"
         ],
         content: `
-**it isn’t that you don’t listen—only that I disappear on the way to your ears**  
+it isn’t that you don’t listen—only that I disappear on the way to your ears  
 
 I.  
 There is a kind of silence that doesn’t come from quiet.  
@@ -2404,7 +2403,7 @@ II.
 I say the thing again. And again. And again.  
 Not loudly. Not bravely. Just…  
 again.  
-Like a record skipping on the word *daughter*.  
+Like a record skipping on the word daughter.  
 
 III.  
 You do not refuse me.  
@@ -2637,7 +2636,7 @@ like an unlit match.
 
 You once looked at me like you were trying to remember who I reminded you of.  
 I would’ve asked if you ever figured it out.  
-I would’ve hoped the answer was *no one*.  
+I would’ve hoped the answer was no one.  
 
 There is still a dent in the floor where I stood that day you didn’t turn around.  
 
@@ -2900,27 +2899,27 @@ When you laugh, the world flickers the way it did then, unbearable and gentle an
         date: "October 3, 2025",
         tags: ["desire", "tenderness"],
         content: `
-*Refrain*  
+Refrain  
 Thank you, oops, you have a leaf in your hair.  
 Thank you for carrying the sun in your mouth  
 and shaking the gold from it like a dog.  
 Thank you for the ping pang striped blue of your naivety.
 
-*Refrain*  
+Refrain  
 Thank you, oops, you have a leaf in your hair.  
 Thank you for the way lemon pound cake loves the tin.  
 Thank you for all the birds that maybe never loved the bees at all.  
 Thank you for every mushroom-capped vulnerability,  
 infectious fungus, naturalistic doom.
 
-*Refrain*  
+Refrain  
 Thank you, oops, you have a leaf in your hair.  
 Thank you for ripping me in half  
 and smoothing the edges with your tongue.  
 Thank you for my left hand insisting  
 it is a separate animal.
 
-*Refrain (softly)*  
+Refrain (softly)  
 Thank you, oops, you have a leaf in your hair.  
 Thank you for the chair  
 that stays warm long after you’ve left the room.
